@@ -829,8 +829,8 @@ header:not(.post-header) .dark-mode-toggle #inverted-msg {
 header:not(.post-header) .dark-mode-toggle .switch,
 header:not(.post-header) .dark-mode-toggle .switchBackground {
   position: relative;
-  width: 30px;
-  height: 17px;
+  width: 100px;
+  height: 34px;
   margin-left: 10px;
 }
 
@@ -854,8 +854,19 @@ header:not(.post-header) .dark-mode-toggle .sliderToggle {
   bottom: 0;
   border: solid 1px var(--foreground-color);
   transition: 0.4s;
-  text-indent: -99999px;
   background-color: var(--background-color-aplha);
+  display: flex;
+  align-items: center;
+}
+
+header:not(.post-header) .dark-mode-toggle .sliderToggle .light {
+  margin-left: auto;
+  margin-right: 8px;
+}
+
+header:not(.post-header) .dark-mode-toggle .sliderToggle .dark {
+  margin-left: 8px;
+  color: var(--background-color);
 }
 
 header:not(.post-header) .dark-mode-toggle .sliderToggleActive {
@@ -865,17 +876,17 @@ header:not(.post-header) .dark-mode-toggle .sliderToggleActive {
 header:not(.post-header) .dark-mode-toggle #circle {
   position: absolute;
   content: "";
-  height: 13px;
-  width: 13px;
-  left: 1px;
-  bottom: 1px;
+  height: 26px;
+  width: 50px;
+  left: 3px;
+  bottom: 3px;
   border-radius: 99em;
   background-color: var(--foreground-color);
   transition: 0.4s;
 }
 
 header:not(.post-header) .dark-mode-toggle .darkmodeSlide {
-  transform: translateX(13px);
+  transform: translateX(43px);
   background-color: var(--background-color) !important;
 }
 

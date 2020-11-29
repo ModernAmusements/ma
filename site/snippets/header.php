@@ -45,10 +45,12 @@
             </nav>
         </menu>
         <a class="dark-mode-toggle">
-        <span id="inverted-msg"></span>
+        <!-- <span id="inverted-msg"></span> -->
             <label class="switch">
                 <span class="sliderToggle">
                     <div id="circle"></div>
+                    <span class="dark">Dark</span>
+                    <span class="light">Light</span>
                 </span>
             </label>
           
