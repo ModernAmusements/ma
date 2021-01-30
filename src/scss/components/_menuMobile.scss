@@ -19,7 +19,7 @@
 .menuicon-bread {
   position: absolute;
   z-index: 3;
-  top: 7px;
+  top: 9px;
   width: 30px;
   height: 30px;
   right: 0;
@@ -28,7 +28,7 @@
 
 @media (min-width: 320px) and (max-width: 768px) {
   .menuicon-bread {
-    right: 5px;
+    top: 4px;
   }
 }
 

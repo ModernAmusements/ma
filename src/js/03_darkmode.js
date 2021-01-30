@@ -21,14 +21,23 @@ const css = `
       /*--background-color: #131310;
       --foreground-color-rgb: 210,230,255;*/
 
+
+
       /*--background-color: #111;
-      --foreground-color-rgb: 255,255,255;*/
+      --foreground-color-rgb: 234,240,244;*/
 
       --background-color-alpha: rgb(23,23,29, 0.7);
-      --background-color: #17171d;
+      --background-color: #111;
       --background-color-elevated: #121217;
-      --foreground-color-rgb: 242,240,236;
+
+      --foreground-color: #DFF1FD;
       --background-color-dark: #000;
+
+
+
+
+
+
 
       --foreground-color-a: 0.8;
       --base-grid-color1: rgba(240,155,255, 0.1);

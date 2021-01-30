@@ -47,7 +47,7 @@ header:not(.post-header) {
       margin-left: 2rem;
     }
     .sliderToggle {
-      border-radius: 99em;
+      border-radius: var(--b-r-small);
       position: absolute;
       top: 0;
       left: 0;
@@ -78,7 +78,7 @@ header:not(.post-header) {
       width: 50px;
       left: 3px;
       bottom: 3px;
-      border-radius: 99em;
+      border-radius: var(--b-r-small);
       background-color: var(--foreground-color);
       -webkit-transition: 0.4s;
       transition: 0.4s;
@@ -127,15 +127,15 @@ header:not(.post-header) {
 #mobile {
   display: none;
 }
-@media (min-width: 320px) and (max-width: 1024px) {
+@media only screen and (max-width: 877px) {
   .desktop-nav {
     display: none;
   }
   header:not(.post-header) {
     grid-template-columns: repeat(4, 1fr);
     padding-top: calc(var(--lineHeight) * 1);
-    padding-left: var(--lineHeight);
-    padding-right: var(--lineHeight);
+    padding: var(--lineHeight);
+    padding-bottom: 0;
   }
   .dark-mode-toggle {
     grid-column: 4 / 5;
@@ -209,8 +209,5 @@ header:not(.post-header) {
   #mobile-nav {
     grid-column: 1 / 4;
     grid-row: 2;
-  }
-  .menuicon-bread {
-    top: 5px;
   }
 }

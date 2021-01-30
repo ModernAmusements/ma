@@ -23,10 +23,11 @@
   --rowGap: var(--lineHeight);
   --displayScale: 1;
   --pixel: 1px;
+  --darkmode-black: #151516;
   --foreground-color-rgb: 0, 0, 0;
   --foreground-color: rgba(var(--foreground-color-rgb));
-  --background-color: #f2f2ec;
-  --background-color-alpha: rgba(242, 242, 236, 0.7);
+  --background-color: #eaf5fd;
+  --background-color-alpha: rgba(234, 240, 244, 0.7);
   --background-color-elevated: #fbfbf9;
   --background-color-dark: #d5d5cd;
   --primary-color: #544AC1;
@@ -48,6 +49,7 @@
   --blur: 30px;
   --spacing: 0px;
   --rotation: (0deg);
+  --b-r-small: 8px;
 }
 
 @supports (font-variation-settings: normal) {
@@ -854,7 +856,7 @@ header:not(.post-header) .dark-mode-toggle .switchBackground {
 }
 
 header:not(.post-header) .dark-mode-toggle .sliderToggle {
-  border-radius: 99em;
+  border-radius: var(--b-r-small);
   position: absolute;
   top: 0;
   left: 0;
@@ -888,7 +890,7 @@ header:not(.post-header) .dark-mode-toggle #circle {
   width: 50px;
   left: 3px;
   bottom: 3px;
-  border-radius: 99em;
+  border-radius: var(--b-r-small);
   background-color: var(--foreground-color);
   transition: 0.4s;
 }
@@ -945,7 +947,7 @@ header:not(.post-header) .active {
   display: none;
 }
 
-@media (min-width: 320px) and (max-width: 1024px) {
+@media only screen and (max-width: 877px) {
   .desktop-nav {
     display: none;
   }
@@ -953,8 +955,8 @@ header:not(.post-header) .active {
   header:not(.post-header) {
     grid-template-columns: repeat(4, 1fr);
     padding-top: calc(var(--lineHeight) * 1);
-    padding-left: var(--lineHeight);
-    padding-right: var(--lineHeight);
+    padding: var(--lineHeight);
+    padding-bottom: 0;
   }
 
   .dark-mode-toggle {
@@ -1038,10 +1040,6 @@ header:not(.post-header) .active {
   #mobile-nav {
     grid-column: 1/4;
     grid-row: 2;
-  }
-
-  .menuicon-bread {
-    top: 5px;
   }
 }
 
@@ -1556,7 +1554,7 @@ nav.categories li {
 
 nav.categories .category-button {
   border: 1px solid var(--foreground-color);
-  border-radius: 99em;
+  border-radius: var(--b-r-small);
   padding: 0 2em;
   line-height: 1.5em;
 }
@@ -1734,16 +1732,13 @@ nav.categories-mobile {
   overflow: hidden;
   height: 5rem;
   transition: height 0.5s ease-out;
-}
-
-.post:after {
-  content: "";
-  position: absolute;
-  display: block;
-  height: 1px;
-  width: 100%;
-  background-color: var(--foreground-color);
-  bottom: 0;
+  border: 1px solid var(--foreground-color);
+  border-radius: 8px;
+  margin-top: 1em;
+  padding: 0 1em;
+  background-color: var(--background-color-alpha);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+          backdrop-filter: saturate(180%) blur(20px);
 }
 
 .close-post:after {
@@ -2239,7 +2234,7 @@ button {
     border-radius: 1px;
     background: var(--foreground-color);
     position: absolute;
-    right: 19px;
+    right: 15px;
     top: 10px;
     transition: transform 300ms cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.1008s;
     transform: translate(0, -50%) rotate(var(--rotateX)) scaleX(0.8);
@@ -3389,7 +3384,7 @@ ul.grid li {
 .menuicon-bread {
   position: absolute;
   z-index: 3;
-  top: 7px;
+  top: 9px;
   width: 30px;
   height: 30px;
   right: 0;
@@ -3398,7 +3393,7 @@ ul.grid li {
 
 @media (min-width: 320px) and (max-width: 768px) {
   .menuicon-bread {
-    right: 5px;
+    top: 4px;
   }
 }
 
@@ -4173,7 +4168,7 @@ button {
   text-transform: uppercase;
   border: solid 1px var(--foreground-color);
   width: 7.5rem;
-  border-radius: 99em;
+  border-radius: var(--b-r-small);
   text-align: center;
   padding: 0.2rem 1rem;
   font-size: 1.2rem;
@@ -4235,7 +4230,7 @@ button {
   position: absolute;
   width: 24px;
   height: 24px;
-  border-radius: 99em;
+  border-radius: var(--b-r-small);
   background: var(--foreground-color);
   z-index: 2;
   top: 16px;
@@ -4282,7 +4277,7 @@ button {
   --border-color: var(--foreground-color);
   --padding: 10px 16px;
   --font-size: 16px;
-  --border-radius: 99em;
+  --border-radius: var(--b-r-small);
   -webkit-appearance: none;
   outline: none;
   display: block;
@@ -4382,7 +4377,7 @@ textarea:hover,
 .form-select select {
   --padding: 10px 16px;
   --font-size: 16px;
-  --border-radius: 99em;
+  --border-radius: var(--b-r-small);
   -webkit-appearance: none;
   outline: none;
   display: block;
@@ -4475,7 +4470,7 @@ textarea:hover,
   padding: 12px 24px;
   font-size: 16px;
   font-weight: 600;
-  border-radius: 99em;
+  border-radius: var(--b-r-small);
   transition: color 0.3s ease, background 0.3s ease, transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 var(--shadowPos) var(--shadowBlur) 0 var(--shadow-dark);
   transform: translateY(var(--y)) translateZ(0);
@@ -4503,7 +4498,7 @@ textarea:hover,
   width: -moz-fit-content;
   width: fit-content;
   border: solid 1px var(--foreground-color);
-  border-radius: 99em;
+  border-radius: var(--b-r-small);
   text-align: center;
   padding: 0.2rem 1rem;
   font-size: 1.2rem;

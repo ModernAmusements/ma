@@ -23,10 +23,12 @@
   --rowGap: var(--lineHeight);
   --displayScale: 1;
   --pixel: 1px;
+  // ColorSettings
+  --darkmode-black: #151516;
   --foreground-color-rgb: 0, 0, 0;
   --foreground-color: rgba(var(--foreground-color-rgb));
-  --background-color: #f2f2ec;
-  --background-color-alpha: rgba(242, 242, 236, 0.7);
+  --background-color: #eaf5fd;
+  --background-color-alpha: rgba(234, 240, 244, 0.7);
   --background-color-elevated: #fbfbf9;
   --background-color-dark: #d5d5cd;
   --primary-color: #544AC1;
@@ -40,6 +42,7 @@
   --trackBg: #bdbdbd;
   --trackFocus: #cacaca;
   --thumbBg: #666;
+   // FoontSettings
   --trackHeight: 1px;
   --thumbHeight: 12px;
   --thumbTouchHeight: 48px;
@@ -48,6 +51,8 @@
   --blur: 30px;
   --spacing: 0px;
   --rotation: (0deg);
+  // BTN
+  --b-r-small: 8px;
 }
 @supports (font-variation-settings: normal) {
   :root {
