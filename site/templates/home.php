@@ -16,23 +16,29 @@
     </section>
     <section class="credentialsName">
       <h1 class="displayText">
-        Florian Nagel
+        Shady Nathan Tawfik
         <br />
-        Graphic Design
+       <h1>Junior FullStack Web-Dev</h1>
       </h1>
     </section>
     <section class="credentialsTime">
       <h1 class="displayText">
-        2017-
+        2016
         <br />
-        2020
+        -2021
       </h1>
     </section>
     <section class="credentialsDate">
-      <h1 class="displayText">
-        Archiv+
+    <p class="subheadline">
+    technical capabilities:</p>
+      <h1 class="x-large">
+        php 7 / Type/JavaScript(Es6)
         <br />
-        Visual Diary
+        Laravel / VueJS
+        <br />
+        Web Server / Authentication
+        <br />
+        nginx / AUTH0 2.0
       </h1>
     </section>
   </article>
