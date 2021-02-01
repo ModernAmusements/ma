@@ -1331,6 +1331,52 @@ footer p {
   grid-row-gap: var(--rowGap);
 }
 
+.pageContent .right {
+  grid-column: 6/9;
+  grid-row: 1;
+}
+
+.pageContent .right .post-homepage {
+  transition: height 0.5s ease-out;
+  border: 1px solid var(--foreground-color);
+  border-radius: 8px;
+  margin-top: 1em;
+  padding: 1em;
+  background-color: var(--background-color-alpha);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+          backdrop-filter: saturate(180%) blur(20px);
+}
+
+.pageContent .right .post-homepage .post-homepage-header,
+.pageContent .right .post-homepage .post-homepage-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pageContent .right .post-homepage .post-homepage-content {
+  margin-top: 0.5em;
+}
+
+.pageContent .right .post-homepage .post-homepage-content .post-homepage-title {
+  text-align: left;
+  padding-left: 0.5em;
+}
+
+.pageContent .right .post-homepage .post-homepage-content .post-homepage-title h3 {
+  margin-bottom: 0.2em;
+}
+
+.pageContent .right .post-homepage .post-homepage-content .post-homepage-title p {
+  line-height: 1em;
+}
+
+.pageContent .right .post-homepage .post-homepage-content img {
+  width: 75px;
+  height: 75px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .pageContent #pov {
   z-index: 500;
 }
