@@ -41,7 +41,8 @@
   background: transparent;
 }
 .btn-default{
-  background: var(--background-color-dark)
+  background-color: var(--background-color-alpha);
+  backdrop-filter: saturate(180%) blur(20px);
 }
 .btn-small {
   font-size: 14px;

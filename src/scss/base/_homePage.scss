@@ -93,6 +93,9 @@
   .homepage-info {
     padding: calc(var(--lineHeight) * 1) 0;
     display: grid;
+    svg{
+      margin-bottom: 1em;
+    }
     svg,
     .date-time {
       justify-self: center;

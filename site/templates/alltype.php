@@ -4,9 +4,14 @@
     <section class="left">
       <article class="card-homepage">
       <div class="card-homepage-title">
-        <h1>Hello! I work with startups and top 
+        <h1>Hello! I´m Shady. I work with startups and top 
           companies to code inclusive, effective, and impactful digital products.</h1>
           <p>Im Shady, a Product Designer from the United Kingdom. 
+            I’ve been designing for over a decade. Throughout that time, 
+            I’ve worked remotely for a number of exciting startups and 
+            established companies. These have been located all over the world, 
+            from Hong Kong and Singapore, to Australia and the United States.</p>
+            <p class="small">Im Shady, a Product Designer from the United Kingdom. 
             I’ve been designing for over a decade. Throughout that time, 
             I’ve worked remotely for a number of exciting startups and 
             established companies. These have been located all over the world, 
@@ -17,7 +22,29 @@
         <button class="btn btn-small btn-outline">Work</button>
         </div>
       </article>
-     
+      <article class="card-homepage">
+      <div class="card-homepage-title">
+        <h1>h1. Modern Amusements Heading</h1>
+        <h2>h2. Modern Amusements Heading</h2>
+        <h3>h3. Modern Amusements Heading</h3>
+        <h4>h4. Modern Amusements Heading</h4>
+        <h5>h5. Modern Amusements Heading</h5>
+        <h1 class="single-line">h1. Modern Amusements Heading</h1>
+        <h2 class="single-line">h2. Modern Amusements Heading</h2>
+        <h3 class="single-line">h3. Modern Amusements Heading</h3>
+        <h4 class="single-line">h4. Modern Amusements Heading</h4>
+        <h5 class="single-line">h5. Modern Amusements Heading</h5>
+        <h1 class="xlarge">h1. Modern Amusements Heading</h1>
+        <h1 class="xxlarge">h1. Modern Amusements Heading</h1>
+        <h1 class="xxxlarge">h1. Modern Amusements Heading</h1>
+       
+        
+        </div>
+        <div class="flex-end">
+        <button class="btn btn-small">Get in Contact</button>
+        <button class="btn btn-small btn-outline">Work</button>
+        </div>
+      </article>
     </section>
     <section class="right">
       <div class="homepage-info-header">
@@ -55,11 +82,7 @@
             </defs>
           </svg>
           <div class="date-time">
-          <p id="date_time">
-            
-          </p>
-           
-           
+            <h4>Saturday, January 30<br>Bielefeld, 16:56:05</h4>
           </div>
       </div>
       <?php if ($worksPage = page('works')): ?>
@@ -67,28 +90,22 @@
       ?>
       <article class="card-homepage">
         <div class="card-homepage-header">
-          <p><?= $work->date()->toDate('Y') ?></p>
-          <p>
-            <a href="<?= $work->url() ?>"class="showpost">
+          <span class="cat">Projects</span>
+          <span><a href="/" class="showpost">
             Show more
-            </a>
-          </p>
+          </a></span>
         </div>
         <div class="card-homepage-content">
           <?php if ($cover = $work->cover()->crop(200)) : ?>
             <div class="card-homepage-cover">
-              <a href="<?= $work->url() ?>">
-                <img  src="<?= $cover->url() ?>" alt="<?= $cover->alt() ?>" />
-              </a>
+            <img src="<?= $cover->url() ?>" alt="<?= $cover->alt() ?>" />
             </div>
             <?php endif ?>
             <div class="card-homepage-title">
-              <a href="<?= $work->url() ?>">
-                <h3><?= $work->title() ?></h3>
-              </a>
-              <p class="small">
-              We decided to express our gratitude by sharing a retrospective of our first year as a studio
-              </p>
+            <h3><?= $work->title() ?></h3>
+            <p class="small">
+            We decided to express our gratitude by sharing a retrospective of our first year as a studio
+            </p>
             </div>
         </div>
       </article>
@@ -108,37 +125,5 @@
   </div>
 </div>  -->
 </main>
-<script type="text/javascript">
-            function date_time(id)
-              {
-              date = new Date;
-              year = date.getFullYear();
-              month = date.getMonth();
-              months = new Array('January', 'February', 'March', 'April', 'May', 'June', 'Jully', 'August', 'September', 'October', 'November', 'December');
-              d = date.getDate();
-              day = date.getDay();
-              days = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
-              h = date.getHours();
-              if(h<10)
-              {
-                      h = "0"+h;
-              }
-              m = date.getMinutes();
-              if(m<10)
-              {
-                      m = "0"+m;
-              }
-              s = date.getSeconds();
-              if(s<10)
-              {
-                      s = "0"+s;
-              }
-              result = ''+days[day]+', '+months[month]+' '+d+',<br>Dusseldorf, '+h+':'+m+':'+s;
-              document.getElementById(id).innerHTML = result;
-              setTimeout('date_time("'+id+'");','1000');
-              return true;
-              }
-            window.onload = date_time('date_time');
-            </script>
 <?= js('assets/js/homePageScripts.js', true) ?>
 <?php snippet('footer') ?>
