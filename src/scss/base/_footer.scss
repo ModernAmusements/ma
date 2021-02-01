@@ -8,70 +8,45 @@
   grid-row-gap: var(--rowGap);
   align-items: center;
   padding: calc(var(--lineHeight) * 0.5) 0;
+  margin: 1em calc(var(--lineHeight) * 2);
   h1 {
-    grid-column: 1 / 5;
-    font-size: 1.7vw;
+    grid-column: 1 / 6;
     margin: 0;
-    white-space: nowrap;
-  }
-  svg {
-    grid-column: 5 / 7;
-    fill: var(--foreground-color);
-    width: 100%;
   }
   .buttons {
-    grid-column: 7 / 9;
+    grid-column: 6 / 9;
+    text-align: center;
+    p{
+      padding-top: 0.5em;
+      margin: 0;
+    }
   }
 }
 
 footer {
-  text-transform: uppercase;
-  padding: 0 calc(var(--lineHeight) * 2);
-  strong {
-    display: block;
-    border-bottom: 1px solid var(--foreground-color);
-  }
-  section#desktop {
-    grid-template-columns: repeat(8, 1fr);
-    display: grid;
-    grid-column-gap: 10px;
-    grid-row-gap: var(--rowGap);
-  }
-  .information,
-  .information-1,
-  .information-2 {
-    align-self: start;
-    a:hover {
-      color: var(--primary-color);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: opacity 1s ease;
+    padding: calc(var(--lineHeight) * 1) calc(var(--lineHeight) * 2);
+    z-index: 1001;
+    border-top: 1px solid var(--foreground-color);
+    background-color: var(--background-color-alpha);
+    backdrop-filter: saturate(180%) blur(20px);
+    display: flex;
+    justify-content: space-between;
+    .legal,
+    .footer-nav {
+      display: flex;
+      justify-content: space-between;
+      a{
+        margin-left: 1em;
+      }
     }
-    a:active {
-      color: var(--primary-color);
+    .footer-nav {
+
     }
-  }
-  .information {
-    grid-column: 1 / 5;
-    .row-2 p:nth-child(1) {
-      width: 50%;
-      float: left;
-    }
-    .row-2 p:nth-child(3) {
-      width: 50%;
-    }
-  }
-  .information-1 {
-    grid-column: 5 / 7;
-  }
-  .information-2 {
-    grid-column: 7 / 9;
-  }
-  .row-2 {
-    p {
-      border-bottom: 1px solid var(--foreground-color);
-    }
-  }
-  p {
-    margin: 0;
-  }
+
 }
 
 #mobile {
@@ -84,7 +59,6 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     h1 {
       grid-column: 1 / 2;
-      font-size: 2.5vw;
       white-space: normal;
     }
     svg {
@@ -100,7 +74,6 @@ footer {
   .cta {
     border-bottom: 0;
     h1 {
-      font-size: 3.5vw;
       white-space: normal;
       line-height: normal;
     }
