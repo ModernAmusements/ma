@@ -43,6 +43,12 @@ tabs:
           subheading:
             type: text
             icon: title
+          HomepageHeading:
+            type: text
+            icon: title
+          pr:
+            type: textarea
+            icon: title
       - width: 1/2
         fields:
           limit:
