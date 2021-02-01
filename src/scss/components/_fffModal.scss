@@ -514,63 +514,7 @@ textarea:hover,
   background-image: url('/images/icons/form-select-icon.svg');
 }
 // Form Links and CTA
-.btn-large {
-  --shadowPos: 2px;
-  --shadowBlur: 4px;
-  --y: 0;
-  text-align: center;
-  width: 100%;
-  vertical-align: middle;
-  touch-action: manipulation;
-  white-space: nowrap;
-  border: none;
-  padding: 12px 24px;
-  font-size: 16px;
-  font-weight: 600;
-  border-radius: var(--b-r-small);
-  transition: color 0.3s ease, background 0.3s ease, transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 var(--shadowPos) var(--shadowBlur) 0 var(--shadow-dark);
-  transform: translateY(var(--y)) translateZ(0);
-  background: var(--primary-color);
-}
 
-.btn-large:hover {
-  background: var(--primary-color-hover-light);
-    --y: -1px;
-    --shadowPos: 4px;
-    --shadowBlur: 8px;
-}
-.btn-large:active {
-    --y: 1px;
-    --shadowPos: 1px;
-    --shadowBlur: 3px;
-}
-.btn-normal {
-  vertical-align: middle;
-  touch-action: manipulation;
-  white-space: nowrap;
-  width: fit-content;
-  border: solid 1px var(--foreground-color);
-  border-radius: var(--b-r-small);
-  text-align: center;
-  padding: 0.2rem 1rem;
-  font-size: 1.2rem;
-  font-weight: 500;
-  background: var(--background);
-}
-
-.btn-normal:link,
-.btn-normal:active,
-.btn-normal:visited,
-.btn-normal:focus {
-  color: var(--foreground-color);
-}
-// .btn-normal:hover,
-// .btn-large:hover {
-//   background: var(--primary-color-hover);
-// }
-// .btn-normal:active {
-// }
 :root {
   --display: block;
 }

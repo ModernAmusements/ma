@@ -1,0 +1,93 @@
+//
+// Icon buttons
+//
+// General styles
+.btn {
+  --background: var(--primary-color);
+  --y: 0;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  position: relative;
+  white-space: nowrap;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  min-width: 120px;
+  border-radius: var(--b-r-small);
+  transition: color 0.3s ease, background 0.3s ease, transform 0.3s ease,
+    opacity 0.3s ease;
+  transform: translateY(var(--y)) translateZ(0);
+  background: var(--background);
+  .btn:link,
+  .btn:active,
+  .btn:visited,
+  .btn:focus {
+    color: var(--color);
+  }
+  &:hover {
+    --y: -1px;
+    --shadowPos: 4px;
+    color: var(--color);
+  }
+  &:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+}
+.btn-outline {
+  border: 1px solid var(--foreground-color);
+  background: transparent;
+}
+.btn-default{
+  background: var(--background-color-dark)
+}
+.btn-small {
+  font-size: 14px;
+  padding: 6px 16px;
+  min-width: 100px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.btn-xsmall {
+  font-size: 12px;
+  padding: 6px 16px;
+  min-width: 80px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+.btn-large {
+  --shadowPos: 2px;
+  --y: 0;
+  text-align: center;
+  width: 100%;
+  vertical-align: middle;
+  touch-action: manipulation;
+  white-space: nowrap;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: var(--b-r-small);
+  transition: color 0.3s ease, background 0.3s ease, transform 0.3s ease,
+    opacity 0.3s ease;
+  transform: translateY(var(--y)) translateZ(0);
+  background: var(--primary-color);
+  &:hover {
+    background: var(--primary-color-hover-light);
+    --y: -1px;
+  }
+  &:active {
+    --y: 1px;
+  }
+}
+// Remove translateY and margin animation when btn is included in a btn-group or input-group
+.btn-group,
+.input-group {
+  .btn {
+    margin-right: 0;
+    transform: translateY(0);
+  }
+}
