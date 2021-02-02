@@ -11,28 +11,28 @@
   <section class="work-subpage-content">
     <article class="subpage-information">
       <div class="subpage-meta">
-        <p class="sub-sub-heading small">Block A</p>
+        <p class="sub-sub-heading  ">Block A</p>
         <h1><?= $page->title() ?></h1>
-        <p class="sub-sub-heading small">Tags:</p>
+        <p class="sub-sub-heading  ">Tags:</p>
         <?php foreach ($page->tags()->split() as $tag): ?>
         <tags class="post-meta">
-          <p class="tags sub-sub-heading small">
+          <p class="tags sub-sub-heading  ">
             <?= $tag ?>
           </p>
         </tags>
         <?php endforeach ?>
         <br />
-        <p class="sub-sub-heading small" >Client:</p>
+        <p class="sub-sub-heading  " >Client:</p>
         <?= $page->client()->kt() ?>
-        <p class="sub-sub-heading small">Involved:</p>
+        <p class="sub-sub-heading  ">Involved:</p>
        <?= $page->contributors()->kt() ?>
       </div>
       <div class="subpage-description">
-        <p class="sub-sub-heading small">Block B</p>
+        <p class="sub-sub-heading  ">Block B</p>
         <?= $page->description()->kt() ?>
       </div>
       <div class="subpage-concept">
-        <p class="sub-sub-heading small">Block C</p>
+        <p class="sub-sub-heading  ">Block C</p>
         <?= $page->concept()->kt() ?>
       </div>
       <div id="barba-wrapper">

@@ -259,7 +259,7 @@ html {
   box-sizing: border-box;
 }
 main {
-  min-height: calc(100vh - 400px);
+  min-height: calc(100vh - 300px);
   padding: calc(var(--lineHeight) * 0.5) calc(var(--lineHeight) * 2);
 }
 @media only screen and (max-width: 768px) {

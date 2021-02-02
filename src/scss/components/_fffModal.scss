@@ -97,7 +97,8 @@ button {
   img {
     width: 100%;
     display: block;
-    border: 1px solid var(--foreground-color);
+    border-left: 1px solid var(--foreground-color);
+    border-bottom: 1px solid var(--foreground-color);
     border-radius: 0 5px 0px 0;
   }
 }

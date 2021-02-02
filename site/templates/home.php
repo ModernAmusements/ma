@@ -16,22 +16,19 @@
             <?php if ($article = page('blog')): ?>
             <article class="card">
                 <a href="<?= $article->url() ?>">
-                  
-                        <?php if ($cover = $article->cover()->crop(600, 600, ['quality' => 100])): ?>
-                        <img class="lazy" data-src="<?= $cover->url() ?>" alt="<?= $cover->alt() ?>" />
-                        <?php endif ?>
-          
-                    <div class="card-title">
-                      <h1><?= $article->HomepageHeading() ?></h1>
-                        <?php if (($excerpt ?? true) !== false): ?>
-                        <p><?= $article->pr()->blocks()->excerpt(260) ?></p>
-                          
-                        <?php endif ?>
-                    </div>
+                  <div class="card-header">
+                      <p class="card-subheading">Updates: 19 January 2021</p>
+                  </div>
+                  <div class="card-title">
+                    <h1><?= $article->HomepageHeading() ?></h1>
+                    <?php if (($excerpt ?? true) !== false): ?>
+                      <p><?= $article->pr()->blocks()->excerpt(260) ?></p>
+                    <?php endif ?>
+                  </div>
+                  <?php if ($cover = $article->cover()->crop(600, 600, ['quality' => 100])): ?>
+                      <img class="lazy" data-src="<?= $cover->url() ?>" alt="<?= $cover->alt() ?>" />
+                  <?php endif ?>
                 </a>
-                <div class="flex-end">
-                    <button class="btn btn-small btn-outline">Learn more</button>
-                </div>
             </article>
             <?php endif ?>
             <article class="card card-grid">
@@ -118,9 +115,7 @@
             <article class="card">
                 <div class="card-header">
                     <p><?= $work->date()->toDate('Y') ?></p>
-                    <p>
                       <a href="<?= $work->url() ?>" class="showpost">Show more</a>
-                    </p>
                 </div>
                 <div class="card-content">
                     <?php if ($cover = $work->cover()->crop(200)) : ?>

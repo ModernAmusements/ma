@@ -40,6 +40,16 @@
           </li>
         </ul>
       </nav>
+      <div class="category-legend">
+        <div class="category-legend-title">
+          <span>Title:</span>
+        </div>
+      <div class="category-legend-description">
+      <span>Year:</span>
+      <span>Type:</span>
+      <!-- <span>Client:</span> -->
+      </div>
+      </div>
       <?php foreach ($page->children()->listed()->sortBy('date', 'desc') as
       $work) : ?>
       <article class="post" data-categories="<?= $tags = implode(' ', $work->tags()->split(','));?> all">
@@ -47,11 +57,11 @@
           <h1 class="post-title"><?= $work->title() ?></h1>
           <div class="post-meta-information">
             <tags class="post-meta">
-              <p class="small"><?= $work->date()->toDate('Y') ?></p>
+              <p><?= $work->date()->toDate('Y') ?></p>
             </tags>
             <?php foreach ($work->tags()->split() as $tag): ?>
             <tags class="post-meta">
-              <p class="small"><?= $tag ?></p>
+              <p><?= $tag ?></p>
             </tags>
             <?php endforeach ?>
           </div>
@@ -62,39 +72,21 @@
         <section class="post-content">
           <article class="work-description">
             <section>
-              <p class="small">Cient:</p>
-            </section>
-            <section>
-              <?= $work->client()->kt() ?>
-            </section>
-            <section>
-              <p class="small">Contributors:</p>
-            </section>
-            <section>
-           <?= $work->contributors()->kt() ?>
-            </section>
-            <section>
-              <p class="small">Date:</p>
-            </section>
-            <section>
-             <?= $work->date()->toDate() ?>
-            </section>
-            <section>
-              <p class="small">Project:</p>
-            </section>
-            <section>
-          <?= $work->description()->kt()  ?>
+              <?= $work->description()->kt()  ?>
             </section>
           </article>
           <article class="work-subpage-link">
             <a class="link" href="<?= $work->url() ?>">
-              <span class="more">Explore Project
-              </span>
-            <svg viewBox="0 0 402 42" xmlns="http://www.w3.org/2000/svg">
+              <!-- <span class="more">Explore Project
+              </span> -->
+            <!-- <svg viewBox="0 0 402 42" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M397 23.5002H0V18.5002H397V23.5002Z" />
                 <path d="M398.506 17.6775L401.335 20.5059L380.828 41.012L378 38.1836L398.506 17.6775Z" />
                 <path d="M401.335 20.5059L398.506 23.3345L378 2.82843L380.828 0L401.335 20.5059Z" />
-            </svg>
+            </svg> -->
+            <div class="links">
+                    <button class="btn">Explore Project</button>
+                </div>
             </a>
           </article>
           <section class="post-gallery">

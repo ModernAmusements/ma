@@ -89,13 +89,10 @@ ul.grid {
   flex-direction: column;
 }
 .blog-article-excerpt {
-  border-radius: 6px;
-  background: var(--background-color-elevated);
+  background-color: var(--background-color-alpha);
+  backdrop-filter: saturate(180%) blur(20px);
   border: 1px solid var(--foreground-color);
-  h2{
-    font-size: 1em;
-    line-height: calc(var(--lineHeight) * 1);
-  }
+  border-radius: 8px;
   .text {
     padding-top: 1rem;
     position: relative;
@@ -135,6 +132,9 @@ ul.grid {
       left: 16px;
       top: 16px;
       z-index: 1;
+      p {
+        margin-bottom: 0;
+      }
     }
     img {
       position: absolute;
@@ -170,8 +170,6 @@ ul.grid {
 
 .blog-article-excerpt-subheadline {
   border-top: 1px solid var(--foreground-color);
-  border-bottom: 1px solid var(--foreground-color);
-  font-weight: 500;
 }
 
 .blog-article-excerpt {
@@ -184,8 +182,6 @@ ul.grid {
   .tags {
     padding-bottom: 1rem;
     border-top: 1px solid var(--foreground-color);
-    font-size: 1em;
-    text-transform: uppercase;
   }
 }
 

@@ -1,6 +1,6 @@
 <div class="blog-prevnext">
   
-  <h2 class="h2">KEEP ON REEDING:</h2>
+  <h2 class="single-line">KEEP ON REEDING:</h2>
 
   <div class="autogrid" style="--gutter: 1.5rem">
 

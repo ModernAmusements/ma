@@ -93,7 +93,10 @@ Cover:
 
 ----
 
-Subheading: ## Eine Ausstellung zwischen Dokumentation und Fantasie
+Subheading:
+
+###Eine Ausstellung zwischen Dokumentation und Fantasie
+***
 
 ----
 
@@ -113,8 +116,12 @@ Tags: Überregional, Kultur
 
 ----
 
-Theme: **Konzept**
+Theme: ###Konzept
 
 ----
 
-Description: Im Kunsthaus Zürich beleuchtet die aktuelle **Bilderwahl-Ausstellung** die verschiedenen Möglichkeiten, wie Architektur im Bild erscheinen kann. Gast-Kuratorin Manuela Reissmann hat die Schau in vier Kapitel gegliedert – das Konzept geht auf.
+Description:
+
+Im Kunsthaus Zürich beleuchtet die aktuelle **Bilderwahl-Ausstellung** die verschiedenen Möglichkeiten, wie Architektur im Bild erscheinen kann. Gast-Kuratorin Manuela Reissmann hat die Schau in vier Kapitel gegliedert – das Konzept geht auf.
+
+***
