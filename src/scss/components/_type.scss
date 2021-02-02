@@ -51,6 +51,9 @@ pre tt {
 p {
   margin-bottom: calc(var(--lineHeight) * 0.5);
 }
+.paragraph{
+  font-size: 18px;
+}
 h1,
 .h1 {
   font-weight: 400;
@@ -73,10 +76,10 @@ h1.single-line:first-child {
 }
 h2,
 .h2 {
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: -0.03em;
   font-size: var(--h2-size);
-  line-height: calc(var(--lineHeight) * 2);
+  line-height: calc(var(--lineHeight) * 1.5);
   margin-left: calc(var(--h2-size) / -26);
   margin-bottom: var(--lineHeight);
 }

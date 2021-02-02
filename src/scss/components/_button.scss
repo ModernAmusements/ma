@@ -25,12 +25,12 @@
   .btn:active,
   .btn:visited,
   .btn:focus {
-    color: var(--color);
+    color: var(--background-color);
   }
   &:hover {
     --y: -1px;
     --shadowPos: 4px;
-    color: var(--color);
+    color: var(--background-color);
   }
   &:not(:last-child) {
     margin-right: 0.5rem;
@@ -78,6 +78,7 @@
   background: var(--primary-color);
   &:hover {
     background: var(--primary-color-hover-light);
+    color: var(--background-color);
     --y: -1px;
   }
   &:active {

@@ -2,36 +2,7 @@
 <main>
     <article class="pageContent">
         <section class="left">
-            <article class="card">
-                <div class="card-title">
-                    <h1>Hello! I work with startups and top companies to code inclusive, effective, and impactful digital products.</h1>
-                    <p>Im Shady, a Product Designer from the United Kingdom. I’ve been designing for over a decade. Throughout that time, I’ve worked remotely for a number of exciting startups and established companies. These have been located all over the
-                        world, from Hong Kong and Singapore, to Australia and the United States.</p>
-                </div>
-                <div class="flex-end">
-                    <button class="btn btn-small">Get in Contact</button>
-                    <button class="btn btn-small btn-outline">Work</button>
-                </div>
-            </article>
-            <?php if ($article = page('blog')): ?>
-            <article class="card">
-                <a href="<?= $article->url() ?>">
-                  <div class="card-header">
-                      <p class="card-subheading">Updates: 19 January 2021</p>
-                  </div>
-                  <div class="card-title">
-                    <h1><?= $article->HomepageHeading() ?></h1>
-                    <?php if (($excerpt ?? true) !== false): ?>
-                      <p><?= $article->pr()->blocks()->excerpt(260) ?></p>
-                    <?php endif ?>
-                  </div>
-                  <?php if ($cover = $article->cover()->crop(600, 600, ['quality' => 100])): ?>
-                      <img class="lazy" data-src="<?= $cover->url() ?>" alt="<?= $cover->alt() ?>" />
-                  <?php endif ?>
-                </a>
-            </article>
-            <?php endif ?>
-            <article class="card card-grid">
+        <article class="card card-grid">
             <div class="list">
                 <h3><?= $site->popUpHeadline() ?></h3>
                 <ul class="checklist">
@@ -68,6 +39,35 @@
                   <?php if ($popUpImage = $site->popUpImage()->toFile()->resize(600)): ?>
                   <img class="lazy" data-src="<?= $popUpImage->url() ?>" alt="<?= $site->altPopUp() ?>" />
                   <?php endif ?>
+                </div>
+            </article>
+            <?php if ($article = page('blog')): ?>
+            <article class="card">
+                <a href="<?= $article->url() ?>">
+                  <div class="card-header">
+                      <p class="card-subheading">Updates: 19 January 2021</p>
+                  </div>
+                  <div class="card-title">
+                    <h2><?= $article->HomepageHeading() ?></h2>
+                    <?php if (($excerpt ?? true) !== false): ?>
+                      <p><?= $article->pr()->blocks()->excerpt(260) ?></p>
+                    <?php endif ?>
+                  </div>
+                  <?php if ($cover = $article->cover()->crop(600, 600, ['quality' => 100])): ?>
+                      <img class="lazy" data-src="<?= $cover->url() ?>" alt="<?= $cover->alt() ?>" />
+                  <?php endif ?>
+                </a>
+            </article>
+            <?php endif ?>
+            <article class="card">
+                <div class="card-title">
+                    <h2>Hello! I work with startups and top companies to code inclusive, effective, and impactful digital products.</h2>
+                    <p>Im Shady, a Product Designer from the United Kingdom. I’ve been designing for over a decade. Throughout that time, I’ve worked remotely for a number of exciting startups and established companies. These have been located all over the
+                        world, from Hong Kong and Singapore, to Australia and the United States.</p>
+                </div>
+                <div class="flex-end">
+                    <button class="btn btn-small">Get in Contact</button>
+                    <button class="btn btn-small btn-outline">Work</button>
                 </div>
             </article>
         </section>

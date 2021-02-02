@@ -22,9 +22,9 @@ mix.js([
 mix.js([
     'src/js/01_homePageScripts.js',
     ], 'assets/js/homePageScripts.js');
-    
+
 
 
 mix.sass('src/scss/index.scss', 'assets/css');
 
-mix.browserSync('https://k-cms-master.test/');
+mix.browserSync('http://modernamusment.test/');

@@ -45,9 +45,9 @@
   <?php if (!empty($tags)): ?>
   <div class="footer-tags">
    <?= $page->subheading()->kt() ?>
-    <div class="blog-article-tags">
+    <div>
       <?php foreach ($tags as $tag): ?>
-      <a href="<?= url('blog', ['params' => ['tag' => $tag]]) ?>"
+      <a class="post-meta" href="<?= url('blog', ['params' => ['tag' => $tag]]) ?>"
         ><?= $tag ?></a
       >
       <?php endforeach ?>
@@ -55,10 +55,6 @@
   </div>
   <?php endif ?>
       <article class="information">
-          <p>Publication:</p>
-          <span>
-            <p><?= $page->date() ?></p>
-          </span>
           <p>Title:</p>
           <span>
             <h3><?= $page->title() ?></h3>
@@ -73,8 +69,10 @@
           <?php endforeach ?>
       </article>
       <article class="information-2">
-          <p>Theme:</p>
-          <?= $page->theme()->kt() ?>
+          <p>Publication:</p>
+          <span>
+            <h3><?= $page->date() ?></h3>
+          </span>
       </article>
   </footer-blog-subpage>
   <?php snippet('blog/prevnext') ?>

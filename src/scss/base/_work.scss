@@ -102,6 +102,9 @@ nav.categories-mobile {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 10px;
+    p {
+      margin: 0;
+    }
   }
   .post-header-toggle {
     grid-column: 8 / 9;
