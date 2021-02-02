@@ -1,5 +1,5 @@
 <!-- FOOTER -->
-<section class="cta card-homepage">
+<section class="cta card card-homepage">
     <h1>Responding to change over following a plan</h1>
 
     <div class="buttons">

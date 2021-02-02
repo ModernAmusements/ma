@@ -1,7 +1,5 @@
 // footer
 .cta {
-  border-bottom: 1px solid var(--foreground-color);
-  border-top: 1px solid var(--foreground-color);
   grid-template-columns: repeat(8, 1fr);
   display: grid;
   grid-column-gap: 10px;

@@ -89,7 +89,7 @@ Fullrow:
 
 Cover:
 
-- m-08-ax.jpg
+- 8.png
 
 ----
 

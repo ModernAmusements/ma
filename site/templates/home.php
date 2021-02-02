@@ -34,6 +34,45 @@
                 </div>
             </article>
             <?php endif ?>
+            <article class="card card-grid">
+            <div class="list">
+                <h3><?= $site->popUpHeadline() ?></h3>
+                <ul class="checklist">
+                  <li>
+                    <svg>
+                      <use xlink:href="images/icons/icons.svg#iconCheckmark"></use>
+                    </svg>
+                    <?= $site->popUpSubHeadline01() ?>
+                  </li>
+                  <li>
+                    <svg>
+                      <use xlink:href="images/icons/icons.svg#iconCheckmark"></use>
+                    </svg>
+                    <?= $site->popUpSubHeadline02() ?>
+                  </li>
+                  <li>
+                    <svg>
+                      <use xlink:href="images/icons/icons.svg#iconCheckmark"></use>
+                    </svg>
+                    <?= $site->popUpSubHeadline03() ?>
+                  </li>
+                </ul>
+                </div>
+                <div class="card-title card-grid-section-one">
+                    <h1>Hello! I work with startups and top companies.</h1>
+                    <p>Im Shady, a Product Designer from the United Kingdom. I’ve been designing for over a decade. Throughout that time, I’ve worked remotely for a number of exciting startups and established companies. These have been located all over the
+                        world, from Hong Kong and Singapore, to Australia and the United States.</p>
+                        <div class="flex-end links">
+                    <button class="btn btn-small">Get in Contact</button>
+                    <button class="btn btn-small btn-outline">Work</button>
+                </div>
+                </div>
+                <div class="form-img">
+                  <?php if ($popUpImage = $site->popUpImage()->toFile()->resize(600)): ?>
+                  <img class="lazy" data-src="<?= $popUpImage->url() ?>" alt="<?= $site->altPopUp() ?>" />
+                  <?php endif ?>
+                </div>
+            </article>
         </section>
         <section class="right">
             <div class="homepage-info-header">
