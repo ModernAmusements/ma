@@ -89,9 +89,7 @@
     }
   }
   .card {
-    .card-title {
-      padding: 1em 0 0 1em;
-    }
+
     .card-header {
       flex-direction: row;
     }
@@ -100,7 +98,7 @@
     }
   }
 }
-@media only screen and(min-width: 820px) {
+@media only screen and(min-width: 1000px) {
   .card-grid {
     grid-template-rows: auto 1fr;
     grid-template-columns: 50% 50%;
@@ -119,7 +117,7 @@
     }
   }
 }
-@media (max-width: 819px) {
+@media only screen and (max-width: 999px) {
   .card-grid {
     grid-template-columns: 1fr;
     margin-top: 24px;

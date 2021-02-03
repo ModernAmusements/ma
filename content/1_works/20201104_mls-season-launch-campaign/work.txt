@@ -1,4 +1,4 @@
-Title: COMME des GARÇONS
+Title: Meditation App
 
 ----
 
@@ -48,7 +48,4 @@ Who? You want it, you know you want it, and you know you want me to give it to y
 
 ----
 
-Client:
-
-- COMME des GARÇONS
-- Yohji Yamamoto
+Client: - Silent Moon

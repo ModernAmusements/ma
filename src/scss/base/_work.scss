@@ -211,7 +211,7 @@ nav.categories-mobile {
   height: 5rem;
   transition: height 0.5s ease-out;
   border: 1px solid var(--foreground-color);
-  border-radius: 8px;
+  border-radius: var(--b-r-small);
   margin-top: 1em;
   padding: 0 1em;
   background-color: var(--background-color-alpha);
@@ -269,7 +269,7 @@ nav.categories-mobile {
     video {
       display: block;
       width: 100%;
-      border-radius: 8px;
+      border-radius: var(--b-r-small);
     }
     video[poster] {
       -o-object-fit: cover;
@@ -338,7 +338,7 @@ nav.categories-mobile {
 // Post-Slider Images
 .slider {
   width: 100%;
-  border-radius: 8px;
+  border-radius: var(--b-r-small);
 }
 .slider__next,
 .slider__prev {

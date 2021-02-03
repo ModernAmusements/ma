@@ -30,11 +30,12 @@
                     <h1>Hello! I work with startups and top companies.</h1>
                     <p>Im Shady, a Product Designer from the United Kingdom. I’ve been designing for over a decade. Throughout that time, I’ve worked remotely for a number of exciting startups and established companies. These have been located all over the
                         world, from Hong Kong and Singapore, to Australia and the United States.</p>
-                    <div class="flex-end links">
+                    <div class="links">
                     <a href="#fffModal" category="header-navigation" action="home" label="consultation-modal" rel="modal:open">
-                      <button class="btn margin-right-s btn-small">Get in Contact</button>
+                      <button class="btn margin-right-s btn-xsmall">Get in Contact</button>
                     </a>
-                    <button class="btn btn-small btn-outline">Work</button>
+                    <button class="btn btn-xsmall btn-outline">CV</button>
+                    <button class="btn btn-xsmall btn-outline">Work</button>
                 </div>
                 </div>
                 <div class="form-img">
@@ -140,7 +141,7 @@
                         <a href="<?= $work->url() ?>">
                             <h3><?= $work->title() ?></h3>
                         </a>
-                        <p class="small">We decided to express our gratitude by sharing a retrospective of our first year as a studio</p>
+                        <?= $work->description()->kt()->excerpt(140) ?>
                         <?php foreach ($work->tags()->split() as $tag): ?>
                           <div class="post-meta post-meta-s">
                             <p><?= $tag ?></p>

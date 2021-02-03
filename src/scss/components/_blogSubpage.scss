@@ -69,7 +69,7 @@
     video {
       display: block;
       width: 100%;
-      border-radius: 8px;
+      border-radius: var(--b-r-small);
     }
   }
   .col-3 {
@@ -82,7 +82,7 @@
     video {
       display: block;
       width: 100%;
-      border-radius: 8px;
+      border-radius: var(--b-r-small);
     }
   }
 }

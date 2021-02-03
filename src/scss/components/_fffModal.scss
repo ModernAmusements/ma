@@ -257,7 +257,7 @@ button {
   background: var(--background-color);
   max-width: 500px;
   width: 100%;
-  border-radius: 8px;
+  border-radius: var(--b-r-small);
   border: 1px solid var(--foreground-color);
   padding: 24px;
   opacity: 0;
@@ -293,7 +293,7 @@ button {
   .confirm-img {
     display: block;
     width: 100%;
-    border-radius: 8px;
+    border-radius: var(--b-r-small);
     margin-bottom: var(--blockSpacingBottom);
   }
   h2 {

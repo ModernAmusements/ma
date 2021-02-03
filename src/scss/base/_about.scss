@@ -112,7 +112,7 @@
         img{
           display: block;
           width: 100%;
-          border-radius: 8px;
+          border-radius: var(--b-r-small);
         }
       }
       .work-legend {

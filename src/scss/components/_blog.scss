@@ -92,7 +92,7 @@ ul.grid {
   background-color: var(--background-color-alpha);
   backdrop-filter: saturate(180%) blur(20px);
   border: 1px solid var(--foreground-color);
-  border-radius: 8px;
+  border-radius: var(--b-r-small);
   .text {
     padding-top: 1rem;
     position: relative;
@@ -150,15 +150,13 @@ ul.grid {
   padding: calc(var(--lineHeight) * 0.5) 0;
 }
 
-.blog-article-excerpt-subheadline {
-  border-top: 1px solid var(--foreground-color);
-}
 
 .blog-article-excerpt {
   .text,
   .date,
   .tags {
     margin-left: 15px;
+    margin-bottom: 15px;
   }
   .date,
   .tags {

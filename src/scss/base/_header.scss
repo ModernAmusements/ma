@@ -163,7 +163,7 @@ header:not(.post-header) {
       width: 100%;
       margin-left: 0;
       border: 1px solid var(--foreground-color);
-      border-radius: 8px;
+      border-radius: var(--b-r-small);
     }
   }
   .navGridMenu {

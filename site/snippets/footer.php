@@ -10,24 +10,24 @@
     </div>
 </section>
 <footer>
-    <div class="legal">
-        <strong>©2016-<?= date('Y') ?></strong>
-        <a aria-label="Read more about Seminole tax hike" href="/test">
-            <p>Modern Amusment. Shady Tawfik</p>
+    <div class="footer-nav">
+        <a class="left" aria-label="Read more about Seminole tax hike" href="imprint">
+           Licensing Terms
+        </a>
+        <a class="left"  aria-label="Read more about Seminole tax hike" href="imprint">
+           Privacy & Cookies
+        </a>
+        <a class="left"  aria-label="Read more about Seminole tax hike" href="imprint">
+            Contact
+        </a>
+        <a class="left"  aria-label="Read more about Seminole tax hike" href="imprint">
+            Imprint
         </a>
     </div>
-    <div class="footer-nav">
-        <a aria-label="Read more about Seminole tax hike" href="imprint">
-            <p>Licensing Terms</p>
-        </a>
-        <a aria-label="Read more about Seminole tax hike" href="imprint">
-            <p>Privacy & Cookies</p>
-        </a>
-        <a aria-label="Read more about Seminole tax hike" href="imprint">
-            <p>Contact</p>
-        </a>
-        <a aria-label="Read more about Seminole tax hike" href="imprint">
-            <p>Imprint</p>
+    <div class="legal">
+        <strong class="margin-right-s">©2016-<?= date('Y') ?></strong>
+        <a aria-label="Read more about Seminole tax hike" href="/test">
+           Modern Amusment™ Shady Tawfik
         </a>
     </div>
 </footer>
