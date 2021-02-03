@@ -9,7 +9,7 @@ return [
       'transport' => [
         'type' => 'smtp',
         'host' => 'smtp.gmail.com',
-        'port' => 465,
+        'port' => 587,
         'security' => true,
         'auth' => true,
         'username' => 'shadynathantawfik@gmail.com',
