@@ -7,7 +7,7 @@
   --hrThickness: 1px;
   --h1-size: 2.8rem;
   --h2-size: 2.2rem;
-  --h3-size: 1.4rem;
+  --h3-size: 1.6rem;
   --h4-size: 1.1rem;
   --ratio: 1.25;
   --ms-0: 1rem;
@@ -29,6 +29,7 @@
   --foreground-color: rgba(var(--foreground-color-rgb));
   --background-color: #eaf5fd;
   --background-color-alpha: rgba(234, 240, 244, 0.7);
+  --background-color-black-elevated: #151519;
   --background-color-elevated: #fbfbf9;
   --background-color-dark: #d5d5cd;
   --primary-color: #544AC1;
@@ -504,4 +505,34 @@ video {
 .flex-end{
   display: flex;
   justify-content: flex-end;
+}
+.margin-right-s {
+  margin-right: 0.5rem;
+}
+.margin-top-s {
+  margin-top: 0.5rem;
+}
+
+
+
+a.left
+{
+    position: relative;
+}
+
+a.left:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--foreground-color);
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+a.left:hover:before {
+  visibility: visible;
+  width: 100%;
 }

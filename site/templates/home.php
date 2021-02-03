@@ -30,8 +30,10 @@
                     <h1>Hello! I work with startups and top companies.</h1>
                     <p>Im Shady, a Product Designer from the United Kingdom. I’ve been designing for over a decade. Throughout that time, I’ve worked remotely for a number of exciting startups and established companies. These have been located all over the
                         world, from Hong Kong and Singapore, to Australia and the United States.</p>
-                        <div class="flex-end links">
-                    <button class="btn btn-small">Get in Contact</button>
+                    <div class="flex-end links">
+                    <a href="#fffModal" category="header-navigation" action="home" label="consultation-modal" rel="modal:open">
+                      <button class="btn margin-right-s btn-small">Get in Contact</button>
+                    </a>
                     <button class="btn btn-small btn-outline">Work</button>
                 </div>
                 </div>
@@ -44,22 +46,31 @@
             <?php if ($article = page('blog')): ?>
             <article class="card">
                 <a href="<?= $article->url() ?>">
-                  <div class="card-header">
-                      <p class="card-subheading">Updates: 19 January 2021</p>
-                  </div>
-                  <div class="card-title">
-                    <h2><?= $article->HomepageHeading() ?></h2>
-                    <?php if (($excerpt ?? true) !== false): ?>
-                      <p><?= $article->pr()->blocks()->excerpt(260) ?></p>
-                    <?php endif ?>
-                  </div>
+                <div class="image">
                   <?php if ($cover = $article->cover()->crop(600, 600, ['quality' => 100])): ?>
-                      <img class="lazy" data-src="<?= $cover->url() ?>" alt="<?= $cover->alt() ?>" />
+                      <img class="lazy blur" data-src="<?= $cover->url() ?>" alt="<?= $cover->alt() ?>" />
                   <?php endif ?>
+                  <div data-link="" class="data-link">
+                    <p>New Post!</p>
+                  </div>
+                </div>
+                <div class="card-header">
+                    <p class="card-subheading margin-top-s">Updates: 19 January 2021</p>
+                </div>
+                <div class="card-title">
+                  <h2><?= $article->HomepageHeading() ?></h2>
+                  <?php if (($excerpt ?? true) !== false): ?>
+                    <p><?= $article->pr()->blocks()->excerpt(260) ?></p>
+                  <?php endif ?>
+                </div>
                 </a>
+                <div class="flex-end">
+                    <button class="btn btn-small">Read article</button>
+                    <button class="btn btn-small btn-outline">See all</button>
+                </div>
             </article>
             <?php endif ?>
-            <article class="card">
+            <!-- <article class="card">
                 <div class="card-title">
                     <h2>Hello! I work with startups and top companies to code inclusive, effective, and impactful digital products.</h2>
                     <p>Im Shady, a Product Designer from the United Kingdom. I’ve been designing for over a decade. Throughout that time, I’ve worked remotely for a number of exciting startups and established companies. These have been located all over the
@@ -69,7 +80,7 @@
                     <button class="btn btn-small">Get in Contact</button>
                     <button class="btn btn-small btn-outline">Work</button>
                 </div>
-            </article>
+            </article> -->
         </section>
         <section class="right">
             <div class="homepage-info-header">
@@ -130,6 +141,11 @@
                             <h3><?= $work->title() ?></h3>
                         </a>
                         <p class="small">We decided to express our gratitude by sharing a retrospective of our first year as a studio</p>
+                        <?php foreach ($work->tags()->split() as $tag): ?>
+                          <div class="post-meta post-meta-s">
+                            <p><?= $tag ?></p>
+                          </div>
+                          <?php endforeach ?>
                     </div>
                 </div>
             </article>

@@ -21,6 +21,7 @@
     opacity 0.3s ease;
   transform: translateY(var(--y)) translateZ(0);
   background: var(--background);
+  border: 1px solid var(--background);
   .btn:link,
   .btn:active,
   .btn:visited,
@@ -39,6 +40,9 @@
 .btn-outline {
   border: 1px solid var(--foreground-color);
   background: transparent;
+  &:hover {
+    color: var(--foreground-color);
+  }
 }
 .btn-default{
   background-color: var(--background-color-alpha);
@@ -50,6 +54,9 @@
   min-width: 100px;
   font-weight: 500;
   border-radius: 5px;
+  &:hover {
+    color: var(--foreground-color);
+  }
 }
 
 .btn-xsmall {
@@ -58,6 +65,10 @@
   min-width: 80px;
   font-weight: 500;
   border-radius: 5px;
+  border: 0px solid;
+  &:hover {
+    color: var(--foreground-color);
+  }
 }
 .btn-large {
   --shadowPos: 2px;

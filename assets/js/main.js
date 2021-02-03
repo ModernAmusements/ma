@@ -11013,21 +11013,20 @@ module.exports = function(module) {
 // jshint ignore: start
 
 /* eslint-disable */
-var preloadFonts = function preloadFonts(id) {
-  return new Promise(function (resolve, reject) {
-    WebFont.load({
-      typekit: {
-        id: id
-      },
-      active: resolve
-    });
-  });
-};
-
-preloadFonts('yxr4ufi').then(function () {
-  document.body.classList.remove('loading');
-  console.log('Neue Haas Unica Loaded');
-});
+// const preloadFonts = (id) => {
+//    return new Promise((resolve, reject) => {
+//        WebFont.load({
+//            typekit: {
+//                id: id
+//            },
+//            active: resolve
+//        });
+//    });
+// };
+// preloadFonts('yxr4ufi').then(() => {
+//    document.body.classList.remove('loading');
+//    console.log('Neue Haas Unica Loaded')
+// });
 
 /***/ }),
 

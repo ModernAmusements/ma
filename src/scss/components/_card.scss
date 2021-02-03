@@ -1,7 +1,7 @@
 .card {
   transition: height 0.5s ease-out;
   border: 1px solid var(--foreground-color);
-  border-radius: 8px;
+  border-radius: var(--b-r-small);
   margin-top: 1em;
   padding: 1em;
   background-color: var(--background-color-alpha);
@@ -21,22 +21,29 @@
       padding-left: 0.5em;
     }
     img {
-      max-width: 200px;
-      max-height: 200px;
+      max-width: 300px;
+      min-height: 200px;
       object-fit: cover;
+      transform: scale(1);
+      transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+  }
+  &:hover {
+    img {
+      transform: scale(1.05);
+      transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
     }
   }
 }
-
 .card-grid {
   padding: 0;
   display: grid;
   position: relative;
   background: var(--background-color);
   width: 100%;
-  border-radius: 8px;
+  border-radius: var(--b-r-small);
   border: 1px solid var(--foreground-color);
-  .card-grid-section-one{
+  .card-grid-section-one {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -44,12 +51,56 @@
     padding: 32px;
   }
   .links {
-    margin-top:auto;
+    margin-top: auto;
   }
 }
-
-
-@media (min-width: 820px) {
+.image {
+  overflow: hidden;
+  position: relative;
+  --w: 9;
+  --h: 9;
+  border-radius: var(--b-r-small);
+  padding-bottom: calc(50% / var(--w) * var(--h));
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 0;
+    transform: scale(1);
+    filter: saturate(500%) blur(20px);
+    transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+}
+.card:hover {
+  .image img {
+    filter: saturate(100%) blur(0px);
+    transform: scale(1.2);
+    transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+}
+@media (min-width: 320px) and (max-width: 1020px) {
+  .card {
+    .card-content {
+      img {
+        max-width: max-content;
+        min-height: 200px;
+      }
+    }
+  }
+  .card {
+    .card-title {
+      padding: 1em 0 0 1em;
+    }
+    .card-header {
+      flex-direction: row;
+    }
+    .card-content  {
+      flex-direction: column;
+    }
+  }
+}
+@media only screen and(min-width: 820px) {
   .card-grid {
     grid-template-rows: auto 1fr;
     grid-template-columns: 50% 50%;
@@ -57,7 +108,7 @@
       grid-column: 2;
       grid-row: 1;
     }
-    .card-grid-section-one{
+    .card-grid-section-one {
       grid-column: 1;
       grid-row: 1 / 3;
     }
@@ -72,62 +123,31 @@
   .card-grid {
     grid-template-columns: 1fr;
     margin-top: 24px;
-    .form-img img {
+    .form-img {
+      grid-row: 2;
+      margin-top: 1em;
+      border-left: 0px;
+      border-bottom: 0px;
       border-radius: 0;
     }
-  }
-}
-
-@media (max-width: 575px) {
-  .card-grid {
-    .card-grid-section-one{
-      padding: 16px;
-      .message {
-        left: 16px;
-        right: 16px;
-      }
-      form {
-        grid-template-columns: 1fr;
-      }
+    .card-grid-section-one {
+      grid-row: 1;
+    }
+    .list {
+      grid-row: 3;
     }
   }
 }
-@media (min-width: 576px) {
+@media only screen and (max-width: 575px) {
   .card-grid {
-    .card-grid-section-one{
-      padding: 25px;
-      form {
-        .firstname {
-          grid-row: 1;
-          grid-column: 1;
-        }
-        .lastname {
-          grid-row: 1;
-          grid-column: 2;
-        }
-        .interest,
-        small,
-        button {
-          grid-column: 1 / 3;
-        }
-        .phone,
-        .email {
-          grid-row: 2;
-        }
-        .reason,
-        .birthday {
-          grid-row: 3;
-        }
-        .interest {
-          grid-row: 4;
-        }
-        small {
-          grid-row: 5;
-        }
-        button {
-          grid-row: 6;
-        }
-      }
+    .form-img {
+
+    }
+    .card-grid-section-one {
+
+    }
+    .list {
+
     }
   }
 }

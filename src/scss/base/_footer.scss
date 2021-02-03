@@ -33,6 +33,7 @@ footer {
     backdrop-filter: saturate(180%) blur(20px);
     display: flex;
     justify-content: space-between;
+  }
     .legal,
     .footer-nav {
       display: flex;
@@ -41,88 +42,40 @@ footer {
         margin-left: 1em;
       }
     }
-    .footer-nav {
 
+    @media (min-width: 320px) and (max-width: 1024px) {
+      // Footer
+      .cta {
+        grid-template-columns: repeat(2, 1fr);
+        h1 {
+          grid-column: 1 / 2;
+          white-space: normal;
+        }
+        svg {
+          display: none;
+        }
+        .buttons {
+          grid-column: 2 / 3;
+        }
+      }
     }
-
-}
-
-#mobile {
-  display: none;
-}
+    @media only screen and (max-width: 768px) {
+      // Footer
+      .cta {
+        border-bottom: 0;
+        h1 {
+          white-space: normal;
+          line-height: normal;
+        }
+      }
+    }
 
 @media (min-width: 320px) and (max-width: 1024px) {
-  // Footer
-  .cta {
-    grid-template-columns: repeat(2, 1fr);
-    h1 {
-      grid-column: 1 / 2;
-      white-space: normal;
-    }
-    svg {
+  footer{
+    padding: calc(var(--lineHeight) * 0.5) var(--lineHeight);
+
+  }
+    .footer-nav {
       display: none;
     }
-    .buttons {
-      grid-column: 2 / 3;
-    }
-  }
-}
-@media only screen and (max-width: 768px) {
-  // Footer
-  .cta {
-    border-bottom: 0;
-    h1 {
-      white-space: normal;
-      line-height: normal;
-    }
-  }
-  footer {
-    padding: var(--lineHeight);
-    padding-bottom: calc(var(--lineHeight) * 2);
-    strong {
-      border-bottom: 0;
-    }
-    section#desktop {
-      display: none;
-    }
-    section#mobile {
-      display: grid;
-      p {
-        margin-bottom: 1rem; // Touch Space
-      }
-    }
-    .information,
-    .information-1,
-    .information-2,
-    .information-3,
-    .information-4 {
-      border-top: 1px solid var(--foreground-color);
-      padding: calc(var(--lineHeight) * 0.5) 0;
-      display: flex;
-      grid-area: span 3;
-      a:hover,
-      a:active,
-      a:visited {
-        color: var(--primary-color);
-      }
-      .row-1 {
-        width: 50%;
-      }
-      .row-2 {
-        width: 50%;
-      }
-      .row-2 p:nth-child(1) {
-        width: 100%;
-      }
-      .row-2 p {
-        border-bottom: 1px solid var(--foreground-color);
-      }
-      .row-2 p:nth-child(3) {
-        width: 100%;
-      }
-    }
-    .row-2 p {
-      border-bottom: 1px solid var(--foreground-color);
-    }
-  }
 }

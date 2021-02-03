@@ -67,8 +67,11 @@
                 <?php $items = $site->children(); $items->prepend('home', page('home'));
                   if ($items->isNotEmpty()) :?>
                 <?php foreach ($items->listed() as $item) : ?>
-                <a <?php e($item->isOpen(), 'class="active"') ?>
-                    href="<?= $item->url() ?>"><?= $item->title()->html() ?></a>
+                 
+                    <a class="left" <?php e($item->isOpen(), 'class="active"') ?>
+                        href="<?= $item->url() ?>"><?= $item->title()->html() ?>
+                        </a>
+            
                 <?php endforeach ?>
                 <?php endif ?>
             </nav>

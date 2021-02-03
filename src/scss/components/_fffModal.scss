@@ -105,9 +105,6 @@ button {
 .list {
   border-radius: 0 0 8px 0;
   padding: 22px;
-  h3 {
-    display: none;
-  }
 }
 .checklist {
   padding: 0;
@@ -158,11 +155,6 @@ button {
   }
 }
 @media (max-width: 991px) {
-  .list {
-    h3 {
-      display: block;
-    }
-  }
   #fffModal {
     .form {
       padding: 24px;
