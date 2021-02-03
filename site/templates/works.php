@@ -85,7 +85,7 @@
                 <path d="M401.335 20.5059L398.506 23.3345L378 2.82843L380.828 0L401.335 20.5059Z" />
             </svg> -->
             <div class="links">
-                    <button class="btn">Explore Project</button>
+                    <button class="btn btn-large">Explore Project</button>
                 </div>
             </a>
           </article>

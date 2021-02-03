@@ -950,11 +950,10 @@ footer {
   align-items: center;
   grid-auto-flow: row;
   grid-template-columns: repeat(3, 1fr);
-  padding: calc(var(--lineHeight) * 1);
+  padding: calc(var(--lineHeight) * 3);
 }
 
 #preload-homepage .intro .intro-items {
-  display: grid;
   text-align: center;
 }
 
@@ -983,7 +982,6 @@ footer {
 }
 
 .pageContent {
-  padding: calc(var(--lineHeight) * 1) 0;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: -webkit-min-content 1fr;
@@ -1037,6 +1035,13 @@ footer {
     grid-row: 2;
     align-self: start;
     justify-self: start;
+  }
+
+  h1.xlarge,
+  .h1.xlarge {
+    --h1-size: 3.5rem!important;
+    line-height: calc(var(--lineHeight) * 2.5) !important;
+    font-weight: 500 !important;
   }
 }
 
@@ -1347,14 +1352,6 @@ nav.categories-mobile {
 .post-content .work-subpage-link {
   grid-column: 6/9;
   grid-row: 2;
-}
-
-.post-content .work-subpage-link .link {
-  grid-template-columns: 1fr 2fr;
-  grid-column-gap: 10px;
-  display: grid;
-  align-items: center;
-  justify-content: center;
 }
 
 .post-content .work-subpage-link .more {
@@ -2747,6 +2744,7 @@ main.work-subpage .work-subpage-content .subpage-information .text-counter {
 
 .card .card-content img {
   max-width: 300px;
+  min-width: 200px;
   min-height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -2857,9 +2855,13 @@ main.work-subpage .work-subpage-content .subpage-information .text-counter {
   .card-grid .form-img {
     grid-row: 2;
     margin-top: 1em;
-    border-left: 0px;
-    border-bottom: 0px;
+  }
+
+  .card-grid .form-img img {
     border-radius: 0;
+    border-left: 0px solid var(--foreground-color);
+    border-bottom: 1px solid var(--foreground-color);
+    border-top: 1px solid var(--foreground-color);
   }
 
   .card-grid .card-grid-section-one {
@@ -3940,6 +3942,9 @@ button {
 
   #fffModal .form-img img {
     border-radius: 0;
+    border-left: 0px solid var(--foreground-color);
+    border-bottom: 1px solid var(--foreground-color);
+    border-top: 1px solid var(--foreground-color);
   }
 }
 
@@ -4056,7 +4061,6 @@ button {
   max-width: 500px;
   width: 100%;
   border-radius: var(--b-r-small);
-  border: 1px solid var(--foreground-color);
   padding: 24px;
   opacity: 0;
   margin: auto;
@@ -4112,6 +4116,7 @@ button {
 @media (max-width: 767px) {
   .modal {
     padding: 20px;
+    border: 1px solid var(--foreground-color);
   }
 }
 

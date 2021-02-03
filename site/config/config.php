@@ -13,7 +13,7 @@ return [
         'security' => true,
         'auth' => true,
         'username' => 'shadynathantawfik@gmail.com',
-        'password' => 'trhrdfogjdsjzrls',
+        'password' => 'fmiauzhcqreujorn',
       ]
       ],
     'kirby' => [

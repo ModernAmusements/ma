@@ -151,6 +151,9 @@ button {
     margin-top: 24px;
     .form-img img {
       border-radius: 0;
+      border-left: 0px solid var(--foreground-color);
+      border-bottom: 1px solid var(--foreground-color);
+      border-top: 1px solid var(--foreground-color);
     }
   }
 }
@@ -258,7 +261,6 @@ button {
   max-width: 500px;
   width: 100%;
   border-radius: var(--b-r-small);
-  border: 1px solid var(--foreground-color);
   padding: 24px;
   opacity: 0;
   margin: auto;
@@ -308,6 +310,7 @@ button {
 @media (max-width: 767px) {
   .modal {
     padding: 20px;
+    border: 1px solid var(--foreground-color);
   }
 }
 @media (max-width: 575px) {

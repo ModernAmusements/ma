@@ -35,7 +35,7 @@ return function($kirby, $pages, $page) {
                     'template' => 'email',
                     'from'     => 'noreplyfffcorp@info.de',
                     'replyTo'  => $data['email'],
-                    'to'       => 'st@zahnarzt-helden.de',
+                    'to'       => 'shadynathantawfik@gmail.com',
                     'subject'  => esc($data['firstName']) . ' wants to work with you!',
                     'data'     => [
                         'sender'        => esc($data['firstName']),

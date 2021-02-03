@@ -286,11 +286,11 @@ nav.categories-mobile {
     grid-column: 6 / 9;
     grid-row: 2;
     .link {
-      grid-template-columns: 1fr 2fr;
-      grid-column-gap: 10px;
-      display: grid;
-      align-items: center;
-      justify-content: center;
+      // grid-template-columns: 1fr 2fr;
+      // grid-column-gap: 10px;
+      // display: grid;
+      // align-items: center;
+      // justify-content: center;
     }
     .more {
       display: table;
@@ -580,11 +580,7 @@ button {
       font-size: 1.75em;
     }
   }
-
 }
-
-
-
 @media (min-width: 320px) and (max-width: 877px) {
   // Pre Layout
   // Post Categories
