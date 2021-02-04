@@ -1669,7 +1669,7 @@ button {
   nav.categories {
     padding: calc(var(--lineHeight) * 0.25) 0;
     grid-template-columns: repeat(4, 1fr);
-    grid-row-gap: var(--rowGap);
+    grid-row-gap: calc(var(--rowGap) * 0.25);
   }
 
   nav.categories button {
@@ -1697,9 +1697,8 @@ button {
     margin: 0;
     margin: 0 -15px;
     display: flex;
-    clear: both;
     overflow: scroll;
-    height: 35px;
+    height: 25px;
     grid-column: 1/5;
     grid-row: 2;
     align-items: baseline;
