@@ -52,57 +52,57 @@
           <input type="website" id="website" name="website" />
         </div>
         <div class="form-parsley firstname">
-          <label for="firstName">Vorname*</label>
+          <label for="firstName">First name*</label>
           <input <?= $data['firstName'] ?? '' ?> name="firstName" type="text" class="form-field"
             data-parsley-trigger="change" autocomplete="off" data-parsley-pattern="^[a-zA-z\s\-\.\üÜäÄöÖß]*$"
             data-parsley-pattern-message="Ungültig (0-9,+,-,() nicht erlaubt)." value="<?= $data['firstName'] ?? '' ?>"
             required="">
         </div>
         <div class="form-parsley lastname">
-          <label for="lastName">Nachname*</label>
+          <label for="lastName">Last name*</label>
           <input name="lastName" type="text" class="form-field" data-parsley-trigger="change" autocomplete="off"
             data-parsley-pattern="^[a-zA-z\s\-\.\üÜäÄöÖß]*$"
             data-parsley-pattern-message="Ungültig (0-9,+,-,() nicht erlaubt)." value="<?= $data['lastName'] ?? '' ?>"
             required="" />
         </div>
         <div class="form-parsley email">
-          <label for="email">E-Mail Adresse*</label>
+          <label for="email">E-mail address*</label>
           <input name="email" type="email" class="form-field" data-parsley-trigger="change" required=""
             value="<?= $data['email'] ?? '' ?>" />
         </div>
         <div class="form-parsley phone">
-          <label for="phoneNumber">Telefonnummer*</label>
+          <label for="phoneNumber">Phone number*</label>
           <input name="phoneNumber" type="tel" class="form-field" data-parsley-trigger="change"
             data-parsley-pattern="^[\d\+\-\.\(\)\/\s]*$"
             data-parsley-pattern-message="Ungültig (0-9,+,-,() sind erlaubt)." required=""
             value="<?= $data['phoneNumber'] ?? '' ?>" />
         </div>
         <div class="form-parsley birthday">
-          <label for="birthday">Geburtsdatum*</label>
+          <label for="birthday">Date of birth*</label>
           <input name="birthday" type="text" class="form-field birthdayMask" placeholder="TT.MM.JJJJ"
             data-parsley-valid-date required="" value="<?= $data['birthday'] ?? '' ?>" />
         </div>
         <div class="form-parsley reason">
-          <label for="interests">Grund*</label>
+          <label for="interests">Reason*</label>
           <div class="form-select">
             <select name="interests" value="<?= $data['interests'] ?? '' ?>">
-              <option value="">Bitte wählen...</option>
-              <option value="Auftrag: Film">Film</option>
-              <option value="Auftrag: Typografie">Typografie</option>
-              <option value="Auftrag: Motion">Motion</option>
-              <option value="Auftrag: Animation">Animation</option>
+              <option value="">Please select...</option>
+              <option value="Auftrag: Film">New web presence</option>
+              <option value="Auftrag: Typografie">Consulting</option>
+              <option value="Auftrag: Motion">Online store</option>
+              <option value="Auftrag: Animation">various</option>
             </select>
           </div>
         </div>
         <div class="form-parsley interest">
-          <label for="text">Ich interessiere mich für*</label>
+          <label for="text">I am interested in*</label>
           <div class="form-parsley">
             <p><textarea cols="25" wrap="physical" id="msg" name="text"><?= $data['text']?? '' ?></textarea></p>
           </div>
         </div>
-        <small>Mit dem Abschicken meiner Daten erkläre ich meine
-          <a class="accept" href="#disclaimerModal" rel="modal:open">Einwilligung</a> zur
-          Kontaktaufnahme durch Florian Nagel.
+        <small>By submitting my data I declare my
+          <a class="accept" href="#disclaimerModal" rel="modal:open">Consent</a> to be contacted by Shady Tawfik.
+          The data will be deleted immediately and automatically after contacting us.
         </small>
         <button class="btn-large consultation-modal" name="submit" value="validate" type="submit">
           HIT ME UP

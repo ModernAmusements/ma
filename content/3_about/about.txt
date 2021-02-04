@@ -65,14 +65,14 @@ Capabilitiesheading: Capabilities
 Capabilities:
 
 - 
-  capabilities: Art Direction
+  capabilities: Web Development
 - 
-  capabilities: Brand Content
+  capabilities: Custom CMS Platform
 - 
-  capabilities: Motion Design
+  capabilities: Javascript / TypeScript
 - 
-  capabilities: Product Imagery
+  capabilities: Vuejs, Vuetify, Vuex
 - 
-  capabilities: Visual Systems
+  capabilities: MySQL, SQLite
 - 
-  capabilities: Research
+  capabilities: PHP, Laravel, MVC

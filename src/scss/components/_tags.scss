@@ -3,8 +3,13 @@
  display: flex;
 }
 
+.post-meta-row {
+  flex-direction: column;
+ }
+
+
 .post-meta-capabilities {
-flex-direction: column;
+flex-direction: row;
 .post-meta{
   margin-right: 0.2em;
 }

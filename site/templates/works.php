@@ -16,26 +16,31 @@
             <button class="button category-button" data-slug="all">All</button>
           </li>
           <li class="category-li">
-            <button class="button category-button" data-slug="Typography">
-              Typography
+            <button class="button category-button" data-slug="Development">
+            Development
             </button>
           </li>
           <li class="category-li">
-            <button class="button category-button" data-slug="3d">3d</button>
+            <button class="button category-button" data-slug="CMS">CMS</button>
           </li>
           <li class="category-li">
-            <button class="button category-button" data-slug="Animation">
-              Animation
+            <button class="button category-button" data-slug="PHP/Laravel">
+            PHP/Laravel
             </button>
           </li>
           <li class="category-li">
-            <button class="button category-button" data-slug="Graphic">
-              Graphic
+            <button class="button category-button" data-slug="VueJs">
+            VueJs
             </button>
           </li>
           <li class="category-li">
-            <button class="button category-button" data-slug="Experimental">
-              Experimental
+            <button class="button category-button" data-slug="MySQL">
+            MySQL
+            </button>
+          </li>
+          <li class="category-li">
+            <button class="button category-button" data-slug="SPA">
+            SPA
             </button>
           </li>
         </ul>

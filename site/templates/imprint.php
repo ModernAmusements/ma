@@ -22,19 +22,19 @@
     <section class="work-subpage-content">
       <article class="subpage-information">
         <div class="subpage-meta">
-          <p class="sub-sub-heading small">Diensteanbieter gemäß § 5 TMG</p>
+          <p class="sub-sub-heading small">Service provider according to § 5 TMG</p>
          <?= $page->about()->kt() ?>
         </div>
         <div class="subpage-description">
-          <p class="sub-sub-heading small">I. Haftungsausschluss</p>
+          <p class="sub-sub-heading small">I. Disclaimer</p>
         <?= $page->info()->kt() ?>
         </div>
         <div class="subpage-concept">
-          <p class="sub-sub-heading small">II. Urheberrecht</p>
+          <p class="sub-sub-heading small">II. Copyright</p>
          <?= $page->cv()->kt() ?>
         </div>
         <div class="subpage-capabilities">
-          <p class="sub-sub-heading small">III. Datenschutz</p>
+          <p class="sub-sub-heading small">III. Privacy</p>
              <?= $page->capabilities()->kt() ?>
         </div>
         <div class="subpage-contact">
@@ -44,7 +44,7 @@
       </article>
       <article class="subpage-information">
         <div class="subpage-meta">
-          <p class="sub-sub-heading small">Diensteanbieter gemäß § 5 TMG</p>
+          <p class="sub-sub-heading small">Service provider according to § 5 TMG</p>
         <?= $page->googleAnalytics()->kt() ?>
         </div>
         <div class="subpage-description">
@@ -52,11 +52,11 @@
          <?= $page->googleAnalyticsConsent()->kt() ?>
         </div>
         <div class="subpage-concept">
-          <p class="sub-sub-heading small">II. Widerspruch Werbe-Mails</p>
+          <p class="sub-sub-heading small">II. Objection advertising mails</p>
          <?= $page->noConsent()->kt() ?>
         </div>
         <div class="subpage-capabilities">
-          <p class="sub-sub-heading small">III. Zweck der Verarbeitung</p>
+          <p class="sub-sub-heading small">III. Purpose of processing</p>
               <?= $page->reason()->kt() ?>
         </div>
         <div class="subpage-contact">

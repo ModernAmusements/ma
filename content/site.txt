@@ -2,15 +2,15 @@ Title: Mondern Amusements - Shady Tawfik Portfolio
 
 ----
 
-Description: Creativity is no longer spontaneous. Find out how our method achieves outstanding strategy and design so as to boost innovation in your company.
+Description: Shady Tawfik is a Web Developer that specializes in website design, custom development, mobile apps. Top rated web design.
 
 ----
 
-Additionaldescription: At Lúcid the digital product is an important part of the global customer experience, it is their virtual point of contact with the service
+Additionaldescription: Web Development made in Germany. From a small town called Bielefeld
 
 ----
 
-Behanceid: FFF-Corp
+Behanceid: Shady Tawfik
 
 ----
 
@@ -26,11 +26,11 @@ Social:
 
 ----
 
-Email: hello@fffcorp.de
+Email: hello@modernamusements.de
 
 ----
 
-Emailpress: press@fffcorp.de
+Emailpress: press@modernamusements.de
 
 ----
 
@@ -40,7 +40,7 @@ Phone: (+31) 6 46 79 52 91
 
 Metaimage:
 
-- 5stoneoflead_still2-960x400.jpg
+- group75.png
 
 ----
 
@@ -66,7 +66,7 @@ Popupimage:
 
 ----
 
-Altpopup: Moz Keyword Explorer tool for SEO keyword research
+Altpopup: Javascript/TypeScript PHP/Laravel/MVC HTML/CSS/Bootstrap/SCSS vuejs/vuetify/vuex Apache/Nginx
 
 ----
 
@@ -76,27 +76,27 @@ Succesimage:
 
 ----
 
-Altsucces: Moz Keyword Explorer tool for SEO keyword research
+Altsucces: Webpack/Babel AWS(EC2/ECS) MySQL/SQLite VersionControl:Git VariousCMS
 
 ----
 
-Consent: Einwilligungserklärung
+Consent: Declaration of consent
 
 ----
 
-Consentdeclaration01: Wir geben deine Daten nicht an Dritte weiter.
+Consentdeclaration01: We do not share your information with third parties.
 
 ----
 
-Consentdeclaration02: Wir verwenden deine Daten ausschließlich zu Beratungs- und Informationszwecken über eine Zusammenarbeit mit FFF-Corp.
+Consentdeclaration02: We use your data exclusively for consulting and information purposes about a cooperation with Modern Amusements.
 
 ----
 
-Consentdeclaration03: Du kannst der Kontaktaufnahme jederzeit widersprechen. Am besten per Mail an (link: mailto:info@fff-corp.de text: info@fff-corp.de).
+Consentdeclaration03: You can object to being contacted at any time. The best way is to send an email to (link: mailto:info@fff-corp.de text: info@ModernAmusements.de).
 
 ----
 
-Consentdeclaration04: Weitere Informationen zum Datenschutz findest du in unserer (link: /datenschutz text: Datenschutzerklärung).
+Consentdeclaration04: You can find more information about data protection in our  (link: /datenschutz text: Data privacy policy).
 
 ----
 

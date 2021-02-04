@@ -711,7 +711,7 @@ header:not(.post-header) .active {
   display: none;
 }
 
-@media only screen and (max-width: 877px) {
+@media only screen and (max-width: 720px) {
   .desktop-nav {
     display: none;
   }
@@ -1906,7 +1906,6 @@ main.work-subpage .work-subpage-content h2 {
 }
 
 main.work-subpage .work-subpage-content p:not(.tags) {
-  margin-top: calc(var(--lineHeight) * 0.5);
   margin-bottom: calc(var(--lineHeight) * 0.5);
 }
 
@@ -2668,8 +2667,12 @@ main.work-subpage .work-subpage-content .subpage-information .text-counter {
   display: flex;
 }
 
-.post-meta-capabilities {
+.post-meta-row {
   flex-direction: column;
+}
+
+.post-meta-capabilities {
+  flex-direction: row;
 }
 
 .post-meta-capabilities .post-meta {

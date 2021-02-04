@@ -39,36 +39,25 @@
                 </ul>
                 </div>
                 <div class="card-title card-grid-section-one">
-                    <h1>Hello! I’m Shady. I work with startups and top companies!</h1>
-                    <p>Capabilities:</p>
+                      <?= $page->cardHeading()->kt()  ?>
+                      <?= $page->cardDescription()->kt()  ?>
+                      <p>Capabilities:</p>
                     <div class="post-meta-capabilities">
-                    <div class="post-meta-row">
-                    <div class="post-meta post-meta-s">php</div>
-                    <div class="post-meta post-meta-s">MVC</div>
-                    <div class="post-meta post-meta-s">Laravel</div>
-                    <div class="post-meta post-meta-s">Vue.js</div>
-                    <div class="post-meta post-meta-s">API</div>
+                      <div class="post-meta-row">
+                        <?php foreach ($page->capabilities()->split() as $tag): ?>
+                          <div class="post-meta post-meta-s">
+                            <?= $tag ?>
+                          </div>
+                        <?php endforeach ?>
+                  
+                      </div>
                     </div>
-                    <div class="post-meta-row">
-                    <div class="post-meta post-meta-s">CMS</div>
-                    <div class="post-meta post-meta-s">SQL</div>
-                    <div class="post-meta post-meta-s">Javascript</div>
-                    <div class="post-meta post-meta-s">Git</div>
-                    </div>
-                    </div>
-                    <p class="margin-top-s">Im Shady, a Web Developer from the Germany. 
-                      Responsible and very ambitious, highly dedicated to my work and on a 
-                      constant quest for new, innovative solutions and ideas. Iinterested 
-                      in programming and a logical approach to problem solving. 
-                      Code perfectionist in the best sense of the word. Above all, I am a team player, 
-                      who developed an understanding of fair play and team spirit through participation 
-                      in numerous sports activities.</p>
-                    <div class="links">
+                    <div class="flex-end margin-top-s">
                     <a href="#fffModal" category="header-navigation" action="home" label="consultation-modal" rel="modal:open">
                       <button class="btn margin-right-s btn-xsmall">Get in Contact</button>
                     </a>
                     <a href="/about">
-                    <button class="btn btn-xsmall btn-outline">CV</button>
+                    <button class="btn margin-right-s btn-xsmall btn-outline">CV</button>
                     </a>
                     <a href="/works">
                     <button class="btn btn-xsmall btn-outline">Work</button>

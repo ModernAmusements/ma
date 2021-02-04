@@ -62,11 +62,12 @@ columns:
         max: 2
         width: 1/2
         options:
-          Typography: Typography
-          3d: 3d
-          Animation: Animation
-          Graphic: Graphic
-          Experimental: Experimental     
+          Development: Development
+          CMS: CMS
+          PHP/Laravel: PHP/Laravel
+          VueJs: VueJs
+          MySQL: MySQL
+          SPA: SPA
       description:
         type: textarea
         size: medium
@@ -83,8 +84,8 @@ columns:
       client:
         label: Clients
         type: textarea
-        width: 1/2 
+        width: 1/2
       line:
-       type: line   
-        
-          
+       type: line
+
+

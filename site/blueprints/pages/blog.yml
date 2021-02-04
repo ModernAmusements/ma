@@ -51,6 +51,13 @@ tabs:
             icon: title
       - width: 1/2
         fields:
+          cover:
+            type: files
+            template: work-cover
+            info: "{{ file.dimensions }}"
+            layout: cards
+            image:
+              cover: true
           limit:
             label: Articles per page
             type: number
