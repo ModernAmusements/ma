@@ -38,7 +38,9 @@
                   </li>
                 </ul>
                 </div>
-                <div class="card-title card-grid-section-one">
+              
+                  <div class="card-grid-section-one">
+                  <div class="card-title">
                       <?= $page->cardHeading()->kt()  ?>
                       <?= $page->cardDescription()->kt()  ?>
                       <p>Capabilities:</p>
@@ -52,23 +54,24 @@
                   
                       </div>
                     </div>
-                    <div class="flex-end margin-top-s">
-                    <a href="#fffModal" category="header-navigation" action="home" label="consultation-modal" rel="modal:open">
-                      <button class="btn margin-right-s btn-xsmall">Get in Contact</button>
-                    </a>
-                    <a href="/about">
-                    <button class="btn margin-right-s btn-xsmall btn-outline">CV</button>
-                    </a>
-                    <a href="/works">
-                    <button class="btn btn-xsmall btn-outline">Work</button>
-                    </a>
+                    <div class="flex-end call-to-action margin-top-s">
+                      <a href="#fffModal" category="header-navigation" action="home" label="consultation-modal" rel="modal:open">
+                        <button class="btn margin-right-s btn-xsmall">Get in Contact</button>
+                      </a>
+                      <a href="/about">
+                      <button class="btn margin-right-s btn-xsmall btn-outline">CV</button>
+                      </a>
+                      <a href="/works">
+                      <button class="btn btn-xsmall btn-outline">Work</button>
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                </div>
-                <div class="form-img">
-                  <?php if ($popUpImage = $site->popUpImage()->toFile()->resize(600)): ?>
-                  <img class="lazy" data-src="<?= $popUpImage->url() ?>" alt="<?= $site->altPopUp() ?>" />
-                  <?php endif ?>
-                </div>
+                <div class="form-img home-page-image">
+                    <?php if ($popUpImage = $site->popUpImage()->toFile()->resize(600)): ?>
+                    <img class="lazy" data-src="<?= $popUpImage->url() ?>" alt="<?= $site->altPopUp() ?>" />
+                    <?php endif ?>
+                  </div>
             </article>
             <?php if ($article = page('blog')): ?>
             <article class="card">
@@ -95,6 +98,7 @@
                 <a href="<?= $article->url() ?>">
                     <button class="btn btn-small">Read articles</button>
                 </a>
+               </div>
             </article>
             <?php endif ?>
         </section>

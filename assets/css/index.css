@@ -534,6 +534,10 @@ video {
   justify-content: flex-end;
 }
 
+.flex-directon-r {
+  flex-direction: row;
+}
+
 .margin-right-s {
   margin-right: 0.5rem;
 }
@@ -1042,6 +1046,20 @@ footer {
     --h1-size: 3.5rem!important;
     line-height: calc(var(--lineHeight) * 2.5) !important;
     font-weight: 500 !important;
+  }
+
+  .call-to-action {
+    flex-direction: column;
+  }
+
+  .call-to-action a {
+    margin-top: 1em;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 320px) {
+  .home-page-image img {
+    max-width: 273px;
   }
 }
 
@@ -2824,9 +2842,7 @@ main.work-subpage .work-subpage-content .subpage-information .text-counter {
 
 @media (min-width: 320px) and (max-width: 1020px) {
   .card .card-content img {
-    max-width: -webkit-max-content;
-    max-width: -moz-max-content;
-    max-width: max-content;
+    max-width: inherit;
     min-height: 200px;
   }
 
@@ -2870,7 +2886,6 @@ main.work-subpage .work-subpage-content .subpage-information .text-counter {
 
   .card-grid .form-img {
     grid-row: 2;
-    margin-top: 1em;
   }
 
   .card-grid .form-img img {

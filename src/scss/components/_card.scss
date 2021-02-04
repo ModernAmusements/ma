@@ -84,7 +84,7 @@
   .card {
     .card-content {
       img {
-        max-width: max-content;
+        max-width: inherit;
         min-height: 200px;
       }
     }
@@ -123,7 +123,6 @@
     margin-top: 24px;
     .form-img {
       grid-row: 2;
-      margin-top: 1em;
       img {
         border-radius: 0;
         border-left: 0px solid var(--foreground-color);

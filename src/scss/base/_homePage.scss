@@ -95,4 +95,20 @@
     line-height: calc(var(--lineHeight) * 2.5)!important;
     font-weight: 500!important;
 }
+.call-to-action {
+  flex-direction: column;
+ a {
+  margin-top: 1em;
+ }
+
+}
+}
+
+
+@media (min-width: 0px) and (max-width: 320px) {
+.home-page-image {
+img {
+  max-width:273px;
+}
+}
 }
