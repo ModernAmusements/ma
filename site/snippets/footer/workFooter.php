@@ -1090,7 +1090,7 @@ function handlePosts(baseElement) {
             setTimeout(function () {
               item.children[0].scrollIntoView({
                 behavior: 'smooth',
-                block: 'start',
+                block: 'center',
               });
             }, 500);
           });

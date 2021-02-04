@@ -269,28 +269,13 @@ button {
     visibility var(--duration) ease;
   transform: scale(var(--scale)) translate3d(0, 0, 0);
   a:not(.close):not(.accept) {
-    text-transform: uppercase;
-    border: solid 1px var(--foreground-color);
-    width: 7.5rem;
-    border-radius: var(--b-r-small);
     text-align: center;
-    padding: 0.2rem 1rem;
     font-size: 1.2rem;
     white-space: nowrap;
     min-width: max-content;
     display: table;
     margin-left: auto;
     margin-right: auto
-  }
-  a:not(.close):not(.accept):hover {
-    color: var(--background-color);
-    background-color: var(--foreground-color);
-    border: 1px solid var(--foreground-color);
-  }
-  a:not(.close):not(.accept):active {
-    color: var(--background-color);
-    background-color: var(--foreground-color);
-    border: 1px solid var(--foreground-color);
   }
   .confirm-img {
     display: block;

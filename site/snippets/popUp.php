@@ -5,9 +5,9 @@
     <?php if ($succesImage = $site->succesImage()->toFile()->resize(600)): ?>
     <img class="lazy" data-src="<?= $succesImage->url() ?>" alt="<?= $site->altSuccess() ?>" />
     <?php endif ?>
-    <h3>Thank You!</h3>
-    <p><?= $success ?></br>Deine E-Mail-Adresse wurde erfolgreich bestätigt.</p>
-    <a href="<?= $page->url() ?>" aria-label="read more about seminole tax hike" rel="modal:close">close</a>
+    <h2 class="single-line">Thank You!</h2>
+    <p><?= $success ?></p>
+    <a class="left" href="<?= $page->url() ?>" aria-label="read more about seminole tax hike" rel="modal:close">Close</a>
   </div>
 </div>
 <?php else: ?>
@@ -139,7 +139,7 @@
         <?= $site->consentDeclaration04()->kt() ?>
       </li>
     </ul>
-    <a href="modal:close" rel="modal:close" class="btn-normal">Ok</a>
+    <a href="modal:close" rel="modal:close" class="left">Ok</a>
   </div>
 </div>
 <?php endif ?>

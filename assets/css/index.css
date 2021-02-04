@@ -32,7 +32,7 @@
   --background-color-alpha: rgba(234, 240, 244, 0.7);
   --background-color-black-elevated: #151519;
   --background-color-elevated: #fbfbf9;
-  --background-color-dark: #d5d5cd;
+  --background-color-dark: #d0ccff;
   --primary-color: #544AC1;
   --primary-color-hover: #544AC1;
   --primary-color-hover-light: #544AC1;
@@ -2663,6 +2663,19 @@ main.work-subpage .work-subpage-content .subpage-information .text-counter {
   transform: translateY(0);
 }
 
+.post-meta-capabilities,
+.post-meta-row {
+  display: flex;
+}
+
+.post-meta-capabilities {
+  flex-direction: column;
+}
+
+.post-meta-capabilities .post-meta {
+  margin-right: 0.2em;
+}
+
 .post-meta {
   text-align: center;
   margin: 0.5em 0;
@@ -2823,7 +2836,7 @@ main.work-subpage .work-subpage-content .subpage-information .text-counter {
   }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1240px) {
   .card-grid {
     grid-template-rows: auto 1fr;
     grid-template-columns: 50% 50%;
@@ -2846,7 +2859,7 @@ main.work-subpage .work-subpage-content .subpage-information .text-counter {
   }
 }
 
-@media only screen and (max-width: 999px) {
+@media only screen and (max-width: 1239px) {
   .card-grid {
     grid-template-columns: 1fr;
     margin-top: 24px;
@@ -4070,12 +4083,7 @@ button {
 }
 
 .modal a:not(.close):not(.accept) {
-  text-transform: uppercase;
-  border: solid 1px var(--foreground-color);
-  width: 7.5rem;
-  border-radius: var(--b-r-small);
   text-align: center;
-  padding: 0.2rem 1rem;
   font-size: 1.2rem;
   white-space: nowrap;
   min-width: -webkit-max-content;
@@ -4084,18 +4092,6 @@ button {
   display: table;
   margin-left: auto;
   margin-right: auto;
-}
-
-.modal a:not(.close):not(.accept):hover {
-  color: var(--background-color);
-  background-color: var(--foreground-color);
-  border: 1px solid var(--foreground-color);
-}
-
-.modal a:not(.close):not(.accept):active {
-  color: var(--background-color);
-  background-color: var(--foreground-color);
-  border: 1px solid var(--foreground-color);
 }
 
 .modal .confirm-img {

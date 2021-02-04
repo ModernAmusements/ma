@@ -1,3 +1,15 @@
+.post-meta-capabilities,
+.post-meta-row {
+ display: flex;
+}
+
+.post-meta-capabilities {
+flex-direction: column;
+.post-meta{
+  margin-right: 0.2em;
+}
+}
+
 .post-meta {
   text-align: center;
   margin: 0.5em 0;
@@ -11,10 +23,9 @@
   }
 }
 
-
 .post-meta-s {
   margin: 0.2em 0;
-    padding: 0 1em;
+  padding: 0 1em;
   p {
     font-size: 0.8em;
   }

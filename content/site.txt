@@ -1,4 +1,4 @@
-Title: FFF-Corp
+Title: Mondern Amusements - Shady Tawfik Portfolio
 
 ----
 
@@ -44,19 +44,19 @@ Metaimage:
 
 ----
 
-Popupheadline: WORK WITH ME
+Popupheadline: My Credo:
 
 ----
 
-Popupsubheadline01: Entwicklung von Kommunikationskonzepten
+Popupsubheadline01: Fast: Fast load times and lag free interaction
 
 ----
 
-Popupsubheadline02: Multidisziplinäre Arbeitsweise
+Popupsubheadline02: Dynamic: Websites don't have to be static
 
 ----
 
-Popupsubheadline03: Erhalte Antworten auf alle deine Fragen
+Popupsubheadline03: Intuitive: Strong preference for engaging UX/UI
 
 ----
 
@@ -72,7 +72,7 @@ Altpopup: Moz Keyword Explorer tool for SEO keyword research
 
 Succesimage:
 
-- dietz_mock_up_01.jpg
+- shady-tawfik-302.jpg
 
 ----
 

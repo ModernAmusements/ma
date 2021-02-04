@@ -6,23 +6,23 @@ Heading: About
 
 ----
 
-Subheading: fff
+Subheading: Me
 
 ----
 
-Company: FFF-Corp
+Company: Shady Tawfik
 
 ----
 
-Street: Lange Straße 2
+Street: Goldbach 14
 
 ----
 
-Zip: 32457
+Zip: 33602
 
 ----
 
-City: Porta Westfalica
+City: Nordrhein-Westfalia
 
 ----
 
@@ -30,15 +30,15 @@ Country: Germany
 
 ----
 
-Email: hello@fffcorp.de
+Email: hello@modernamusements.de
 
 ----
 
-Phone: (+31) 6 46 79 52 91
+Phone: (+49) 1 71 285 30 46
 
 ----
 
-About: # Minden based Design & Animation Studio founded by Florian Nagel
+About: # Currently based in Bielefeld, working with startups and top companies.
 
 ----
 
@@ -76,5 +76,3 @@ Capabilities:
   capabilities: Visual Systems
 - 
   capabilities: Research
-
-----

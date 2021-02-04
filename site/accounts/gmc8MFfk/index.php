@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'email' => 'fnagel1992@gmail.com',
+    'email' => 'amusementsmodern@admin.de',
     'language' => 'en',
-    'name' => 'Florian Nagel',
+    'name' => 'Shady Tawfik',
     'role' => 'admin'
 ];

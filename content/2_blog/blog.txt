@@ -2,11 +2,11 @@ Title: Archive
 
 ----
 
-Heading: Test
+Heading: Archive
 
 ----
 
-Subheading: 3000
+Subheading: Blog
 
 ----
 
