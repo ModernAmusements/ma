@@ -16,6 +16,20 @@ Fullrow:
     In Paris engagiert sich Ernst in der Surrealisten-Gruppe um Breton und arbeitet dort mit den Künstlern Picasso, Braque, Miro und Dalí zusammen. 1927 heiratet Max Ernst erneut, Marie-Berthe Aurenche und ihre Ehe hält knapp 9 Jahre. Ende des 30er Jahre lebt er für einige paar Jahre zusammen mit der Malerin und Schriftstellerin Loenora Carrington auf einem Bauernhof in Südfrankreich.
     
     Als der Zweite Weltkrieg ausbricht wird er als Ausländer mehrmals verhaftet und verhört und wird für kurze Zeit inhaftiert. Max Ernst schafft es mit Hilfe der Kunstsammlerin und Mäzenen Peggy Guggenheim (1898-1979) in die USA zu fliehen. Hier steht nun seiner Karriere als Künstler nichts mehr im Weg. Für eine kurze Zeit ist er Anfang der vierziger Jahre sogar mit Frau Guggenheim verheiratet. Ein paar Jahre später heiratet er zum vierten Mal, diesmal die Dada-Surrealistische Künstlerin Dorothea Tanning. (1910 geboren).
+    ****
+  codeheadingc3: '### Reason 1: Tailwind promotes ugly-ass HTML.'
+  codec3: |
+    <div class="min-w-0 flex-auto space-y-0.5">
+    <p class="text-lime-600 dark:text-lime-400 text-sm sm:text-base lg:text-sm xl:text-base font-semibold uppercase">
+    <abbr title="Episode">Ep.</abbr> 128
+    </p>
+    <h2 class="text-black dark:text-white text-base sm:text-xl lg:text-base xl:text-xl font-semibold truncate">
+    Scaling CSS at Heroku with Utility Classes
+    </h2>
+    <p class="text-gray-500 dark:text-gray-400 text-base sm:text-lg lg:text-base xl:text-lg font-medium">
+    Full Stack Radio
+    </p>
+    </div>
   imagebuilder: [ ]
   imagebuilderalt: ""
   _key: fullRow
@@ -35,6 +49,19 @@ Fullrow:
     1910 zieht Max Ernst nach Bonn, um unter anderem Kunstgeschichte und Philologie zu studieren. Er beendet sein Studium vorzeitig und konzentriert sich stattdessen auf seine Malerei. In Bonn lernt er den Expressionismus und den Maler August Macke kennen, dessen Stil ihn für eine Weile beeinflussen wird. Max Ernst ist nach einiger Zeit der eigenen Erfahrung unzufrieden mit der expressionistischen Ausdrucksweise und beginnt neue Wege zu suchen, die ihm zu Dada und zum Surrealismus führen.
     
     Nach seinem 4-jährigen Einsatz im Ersten Weltkrieg gründet er 1918 zusammen mit Hans Arp die Kölner Dada-Gruppe. Im selben Jahr heiratet er Luise Straus (1893 - 1944). Luise ist Kunsthistorikerin, Journalistin und Künstlerin, die er in Bonn kennen gelernt hat. Mit ihr bekommt Max Erst zwei Jahre später einen Sohn – Jimmy Ernst. Er wird später in den USA als surrealistischen Maler bekannt werden.
+  codeheadingc3: ""
+  codec3: |
+    <div class="min-w-0 flex-auto space-y-0.5">
+    <p class="text-lime-600 dark:text-lime-400 text-sm sm:text-base lg:text-sm xl:text-base font-semibold uppercase">
+    <abbr title="Episode">Ep.</abbr> 128
+    </p>
+    <h2 class="text-black dark:text-white text-base sm:text-xl lg:text-base xl:text-xl font-semibold truncate">
+    Scaling CSS at Heroku with Utility Classes
+    </h2>
+    <p class="text-gray-500 dark:text-gray-400 text-base sm:text-lg lg:text-base xl:text-lg font-medium">
+    Full Stack Radio
+    </p>
+    </div>
   imagebuilder: [ ]
   imagebuilderalt: ""
   _key: fullRow
@@ -49,9 +76,13 @@ Fullrow:
   textc2: '# 03'
   headingc3: 'Max Ernst - Sein Werk'
   textc3: |
-    Ab 1953 lebt Max Ernst in Europa. Er beteiligt sich hier an mehreren großen Ausstellungen wie der Documenta-Ausstellungen in Kassel und die Biennale von Venedig. Als Max Ernst 1976 stirbt, wird sein Lebenswerk mit einem der bedeutendsten internationalen Künstlerpreise geehrt: den Goslarer Kaiserring. Der „Verein zur Förderung moderner Kunst Goslar e.V.“ der Stadt Goslar verleiht diese Auszeichnung seit 1975 alljährlich an internationale zeitgenössische Künstler.
+    Für die Malerei entwickelte er seine Erfindung weiter und nannte sie „Grattage“ (s.u.). In den späten zwanziger Jahren zeichneten seine Bildzyklen, Motive, wie Vögel, Wald und Muschelblumen. In seinen Arbeiten bezog er den die Fantasie anregenden Zufall in den Schaffensprozess mit ein. Diese künstlerischen Techniken wurden bestimmend für seinen Stilausdruck.
     
-    Als Maler, Bildhauer, Zeichner und Dichter ist Max Ernst ein wichtiger Künstler innerhalb des Dada und des Surrealismus. Viele seiner Werke sind heute im Max Ernst Museum in Brühl zu sehen.
+    Mit der Machtübernahme der Nationalsozialisten 1933 in Deutschland wurde der Künstler MAX ERNST als „entartet“ eingestuft und diffamiert. Auf der Ausstellung „Entartete Kunst“ 1937 in München zeigten die Nationalsozialisten nur zwei Bilder von ihm. Seit 1934 beschäftigte er sich wieder mit der Skulpturenkunst. Es entstanden Dschungelbilder und einige Werke, die versteinerte Städte darstellen.
+    
+    ERNST gehörte ab 1938 dem Vorstand des von deutschen Antifaschisten in Paris gegründeten Freien Künstlerbundes an, dessen Präsident OSKAR KOKOSCHKA (1886–1980) war.
+  codeheadingc3: ""
+  codec3: ""
   imagebuilder:
     - max-ernst-museum_02.jpg
   imagebuilderalt: |
@@ -68,12 +99,18 @@ Fullrow:
   headingc2: Section 004
   textc2: '# 04'
   headingc3: Die „Frottage“
-  textc3: |
-    Für die Malerei entwickelte er seine Erfindung weiter und nannte sie „Grattage“ (s.u.). In den späten zwanziger Jahren zeichneten seine Bildzyklen, Motive, wie Vögel, Wald und Muschelblumen. In seinen Arbeiten bezog er den die Fantasie anregenden Zufall in den Schaffensprozess mit ein. Diese künstlerischen Techniken wurden bestimmend für seinen Stilausdruck.
-    
-    Mit der Machtübernahme der Nationalsozialisten 1933 in Deutschland wurde der Künstler MAX ERNST als „entartet“ eingestuft und diffamiert. Auf der Ausstellung „Entartete Kunst“ 1937 in München zeigten die Nationalsozialisten nur zwei Bilder von ihm. Seit 1934 beschäftigte er sich wieder mit der Skulpturenkunst. Es entstanden Dschungelbilder und einige Werke, die versteinerte Städte darstellen.
-    
-    ERNST gehörte ab 1938 dem Vorstand des von deutschen Antifaschisten in Paris gegründeten Freien Künstlerbundes an, dessen Präsident OSKAR KOKOSCHKA (1886–1980) war.
+  textc3: ""
+  codeheadingc3: ""
+  codec3: |
+    **.blog-article-content** {
+    padding: calc(var(--lineHeight) * 1) 0;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: min-content 1fr;
+    grid-column-gap: 10px;
+    align-items: end;
+    grid-row-gap: var(--rowGap);
+    }
   imagebuilder:
     - default.jpg
   imagebuilderalt: |

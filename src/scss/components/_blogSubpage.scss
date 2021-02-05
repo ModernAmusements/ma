@@ -41,6 +41,19 @@
     line-height: var(--lineHeight);
     margin: calc(var(--lineHeight) * 0.5) 0;
   }
+  .code-example {
+    margin: 0;
+    white-space: pre;
+    word-wrap: normal;
+    overflow-x: auto;
+    .blog-code{
+      display:grid
+    }
+    p {
+    margin: 0;
+    line-height: 0.6em;
+    }
+  }
   h1 {
     margin: 0;
   }

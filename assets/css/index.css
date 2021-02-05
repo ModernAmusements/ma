@@ -3602,6 +3602,22 @@ ul.grid li {
   margin: calc(var(--lineHeight) * 0.5) 0;
 }
 
+.blog-article-content .code-example {
+  margin: 0;
+  white-space: pre;
+  word-wrap: normal;
+  overflow-x: auto;
+}
+
+.blog-article-content .code-example .blog-code {
+  display: grid;
+}
+
+.blog-article-content .code-example p {
+  margin: 0;
+  line-height: 0.6em;
+}
+
 .blog-article-content h1 {
   margin: 0;
 }

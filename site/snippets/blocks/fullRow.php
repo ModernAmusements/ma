@@ -26,5 +26,13 @@
     <?php if ($data->textC3()->isNotEmpty()): ?>
       <?= $data->textC3()->kt() ?>
     <?php endif ?>
+    <?php if ($data->codeC3()->isNotEmpty()): ?>
+      <?= $data->codeHeadingC3()->kt() ?>
+      <pre class="code-example">
+        <code class="blog-code">
+        <?= $data->codeC3()->html()->markdown()->kt() ?>
+        </code>
+      </pre>
+    <?php endif ?>
   </div>
 </section>
