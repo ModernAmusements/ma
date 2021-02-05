@@ -2,7 +2,7 @@
 $(function() {
   $('#preload-homepage').click(function() {
     $(this)
-      .fadeOut('300')
+      .fadeOut('3000')
       .remove();
   });
   if (!sessionStorage.getItem('homePagePreloader')) {
@@ -17,7 +17,4 @@ $(function() {
   } else {
     $('#preload-homepage').css('display', 'none');
   }
-
 });
-
-

@@ -32,7 +32,7 @@
     </div>
 </footer>
 <div id="consent-popup" class="hidden">
-    <p>We use cookies for analysis and marketing purposes. Please accept <a href="imprint">Terms and Conditions</a> these before using the site.</p>
+    <p class="small">We use cookies for analysis and marketing purposes. Please accept <a href="imprint">Terms and Conditions</a> these before using the site.</p>
     <a id="accept" href="#">Accept</a>
 </div>
 <?php snippet('popUp') ?>

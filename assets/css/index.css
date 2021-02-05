@@ -924,6 +924,7 @@ footer {
 
   footer {
     padding: var(--lineHeight);
+    font-size: 0.8em;
   }
 
   .cta {
@@ -979,6 +980,7 @@ footer {
 
 #consent-popup a {
   text-decoration: underline;
+  align-self: flex-end;
 }
 
 #consent-popup.hidden {
@@ -1043,7 +1045,7 @@ footer {
 
   h1.xlarge,
   .h1.xlarge {
-    --h1-size: 3.5rem!important;
+    --h1-size: 3.5rem !important;
     line-height: calc(var(--lineHeight) * 2.5) !important;
     font-weight: 500 !important;
   }
@@ -1057,9 +1059,19 @@ footer {
   }
 }
 
-@media (min-width: 0px) and (max-width: 320px) {
+@media (min-width: 0px) and (max-width: 322px) {
   .home-page-image img {
     max-width: 273px;
+  }
+
+  .intro-items h1.xlarge {
+    font-size: 2em;
+  }
+
+  .intro-items h1 {
+    font-size: 1.5em;
+    margin-top: calc(var(--lineHeight) * 1);
+    margin-bottom: calc(var(--lineHeight) * 1);
   }
 }
 
@@ -2775,18 +2787,47 @@ main.work-subpage .work-subpage-content .subpage-information .text-counter {
   margin-bottom: 0.2em;
 }
 
-.card .card-content img {
+.card .card-content .card-cover img {
   max-width: 300px;
   min-width: 200px;
   min-height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
+  transform: scale(0.9);
+  filter: saturate(400%) blur(5px);
+  transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.card .image {
+  overflow: hidden;
+  position: relative;
+  --w: 9;
+  --h: 9;
+  border-radius: var(--b-r-small);
+  padding-bottom: calc(50% / var(--w) * var(--h));
+}
+
+.card .image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 0;
+  transform: scale(1);
+  filter: saturate(500%) blur(20px);
+  transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.card:hover .card-cover img {
+  filter: saturate(100%) blur(0px);
   transform: scale(1);
   transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
-.card:hover img {
-  transform: scale(1.05);
+.card:hover .image img {
+  filter: saturate(100%) blur(0px);
+  transform: scale(1.2);
   transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
@@ -2812,35 +2853,8 @@ main.work-subpage .work-subpage-content .subpage-information .text-counter {
   margin-top: auto;
 }
 
-.image {
-  overflow: hidden;
-  position: relative;
-  --w: 9;
-  --h: 9;
-  border-radius: var(--b-r-small);
-  padding-bottom: calc(50% / var(--w) * var(--h));
-}
-
-.image img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border: 0;
-  transform: scale(1);
-  filter: saturate(500%) blur(20px);
-  transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
-}
-
-.card:hover .image img {
-  filter: saturate(100%) blur(0px);
-  transform: scale(1.2);
-  transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
-}
-
 @media (min-width: 320px) and (max-width: 1020px) {
-  .card .card-content img {
+  .card .card-content .card-cover img {
     max-width: inherit;
     min-height: 200px;
   }
@@ -3250,7 +3264,7 @@ h6 > a:hover,
 
 .autogrid {
   --gutter: ;
-  --min: 20rem;
+  --min: 15rem;
   display: grid;
   grid-gap: var(--gutter);
   grid-template-columns: repeat(auto-fit, minmax(var(--min), 1fr));

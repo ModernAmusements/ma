@@ -56,7 +56,7 @@
 
 .autogrid {
   --gutter: ;
-  --min: 20rem;
+  --min: 15rem;
   display: grid;
   grid-gap: var(--gutter);
   grid-template-columns: repeat(auto-fit, minmax(var(--min), 1fr));

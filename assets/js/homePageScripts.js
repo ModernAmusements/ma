@@ -10980,7 +10980,7 @@ return jQuery;
 /* WEBPACK VAR INJECTION */(function($) {// Preloader
 $(function () {
   $('#preload-homepage').click(function () {
-    $(this).fadeOut('300').remove();
+    $(this).fadeOut('3000').remove();
   });
 
   if (!sessionStorage.getItem('homePagePreloader')) {
