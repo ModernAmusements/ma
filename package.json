@@ -1,8 +1,8 @@
 {
-  "name": "ShadyTawfik",
+  "name": "shadytawfik",
   "private": false,
   "version": "1.0.1",
-  "description": "Shady Tawfik",
+  "description": "Shady Tawfik ModernAmusements 2021 Homepage All Rights Reserverd",
   "scripts": {
     "test": "npx stylelint src/scss/index.scss || true",
     "test-scss": "stylelint '**/*.scss'; exit 0",

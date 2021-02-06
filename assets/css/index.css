@@ -2106,6 +2106,89 @@ main.work-subpage .work-subpage-content .subpage-information .text-counter {
   }
 }
 
+.error-page {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: var(--rowGap);
+}
+
+.error-page .cover-animation {
+  overflow: hidden;
+  position: relative;
+  grid-column: 1/9;
+  grid-row: 1/3;
+  border-bottom: 1px solid var(--foreground-color);
+  padding: 3vw 0;
+}
+
+.error-page .cover-animation .type-loop {
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+}
+
+.error-page .cover-animation .type-loop span.loop-right {
+  -webkit-animation: typeloop-right infinite 20s linear;
+          animation: typeloop-right infinite 20s linear;
+}
+
+.error-page .cover-animation .type-loop span.loop-left {
+  -webkit-animation: typeloop-left infinite 20s linear;
+          animation: typeloop-left infinite 20s linear;
+}
+
+.error-page .cover-animation span.cover-heading {
+  font-size: 16vw;
+  line-height: calc(var(--lineHeight) * 7);
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  position: relative;
+}
+
+@media (min-width: 320px) and (max-width: 720px) {
+  .error-page {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+  }
+
+  .error-page .cover-animation {
+    grid-area: 1/1/1/3;
+  }
+
+  .error-page .cover-animation span.cover-heading {
+    font-size: 45vw;
+  }
+}
+
+@keyframes typeloop-left {
+  from {
+    left: 0%;
+  }
+
+  to {
+    left: -250%;
+  }
+}
+
+@keyframes typeloop-right {
+  from {
+    left: -250%;
+  }
+
+  to {
+    left: 0%;
+  }
+}
+
 .about-page {
   display: grid;
   grid-template-columns: repeat(8, 1fr);

@@ -1,7 +1,6 @@
 <!-- FOOTER -->
 <section class="cta card card-homepage">
-    <h1>Responding to change over following a plan</h1>
-
+  <h1 class="single-line">Responding to change over following a plan</h1>
     <div class="buttons">
         <a href="#fffModal" category="header-navigation" action="home" label="consultation-modal" rel="modal:open">
             <button class="btn-large consultation">HIT ME UP</button>
@@ -26,7 +25,7 @@
     </div>
     <div class="legal">
         <strong class="margin-right-s">©2016-<?= date('Y') ?></strong>
-        <a aria-label="Read more about Seminole tax hike" href="/test">
+        <a aria-label="Read more about Seminole tax hike" href="/about">
            Modern Amusment™ Shady Tawfik
         </a>
     </div>

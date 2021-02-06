@@ -7,6 +7,14 @@
  * More about snippets: https://getkirby.com/docs/guide/templates/snippets
  */
 ?>
-<header class="intro">
-  <h1><?= $page->title() ?></h1>
-</header>
+
+<div class="error-page">
+  <section class="cover-animation">
+    <div class="type-loop">
+      <span class="cover-heading loop-right">––––<?= $page->title() ?>––––––––<?= $page->title() ?>––––––––<?= $page->title() ?>––––––––<?= $page->title() ?>––––––––<?= $page->title() ?>––––––––<?= $page->title() ?>––––</span>
+    </div>
+    <div class="type-loop">
+      <span class="cover-heading loop-left">––––<?= $page->title() ?>––––––––<?= $page->title() ?>––––––––<?= $page->title() ?>––––––––<?= $page->title() ?>––––––––<?= $page->title() ?>––––––––<?= $page->title() ?>––––</span>
+    </div>
+  </section>
+</div>

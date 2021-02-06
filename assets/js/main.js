@@ -13922,14 +13922,14 @@ $bugerMenu.click(function () {
 });
 var $window = $(window);
 $window.resize(function () {
-  if ($window.width() > 1050) {
+  if ($window.width() > 710) {
     $mobileNav.slideUp('medium');
   }
 
   ;
 });
 $window.resize(function () {
-  if ($window.width() > 1050) {
+  if ($window.width() > 710) {
     $bugerMenu.removeClass('open');
   }
 });

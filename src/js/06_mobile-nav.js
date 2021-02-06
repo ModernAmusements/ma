@@ -14,10 +14,10 @@ $bugerMenu.click(function () {
 const $window = $(window);
 
 $window.resize(function () {
-  if ($window.width() > 1050) { $mobileNav.slideUp('medium') };
+  if ($window.width() > 710) { $mobileNav.slideUp('medium') };
 });
 
 $window.resize(function () {
-  if ($window.width() > 1050) { $bugerMenu.removeClass('open') }
+  if ($window.width() > 710) { $bugerMenu.removeClass('open') }
 });
 
