@@ -134,7 +134,8 @@ header:not(.post-header) {
   header:not(.post-header) {
     grid-template-columns: repeat(4, 1fr);
     padding-top: calc(var(--lineHeight) * 1);
-    padding: var(--lineHeight);
+    padding-left: var(--lineHeight);
+    padding-right: var(--lineHeight);
     padding-bottom: 0;
     a:not(.home-logo):not(.dark-mode-toggle) {
       margin-right: 0;

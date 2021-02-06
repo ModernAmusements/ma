@@ -88,11 +88,22 @@ ul.grid {
   display: flex;
   flex-direction: column;
 }
+
 .blog-article-excerpt {
   background-color: var(--background-color-alpha);
   backdrop-filter: saturate(180%) blur(20px);
   border: 1px solid var(--foreground-color);
   border-radius: var(--b-r-small);
+  .text,
+  .date,
+  .tags {
+    margin-left: 15px;
+    margin-bottom: 15px;
+  }
+  .date,
+  .tags {
+    border-top: 1px solid var(--foreground-color);
+  }
   .text {
     padding-top: 1rem;
     position: relative;
@@ -124,7 +135,7 @@ ul.grid {
       height: 100%;
       object-fit: cover;
       border: 0;
-      border-radius: 4px 4px 0 0 ;
+      border-radius: 4px 4px 0 0;
       transform: scale(1);
       filter: saturate(500%) blur(20px);
       transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -135,7 +146,7 @@ ul.grid {
 
 .blog-article-excerpt:hover {
   .image img {
-    filter: saturate(100%) blur(0px);
+    filter: saturate(100%) blur(0);
     transform: scale(1.08);
     transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
   }
@@ -151,18 +162,6 @@ ul.grid {
 }
 
 
-.blog-article-excerpt {
-  .text,
-  .date,
-  .tags {
-    margin-left: 15px;
-    margin-bottom: 15px;
-  }
-  .date,
-  .tags {
-    border-top: 1px solid var(--foreground-color);
-  }
-}
 
 .blog-article-excerpt-subheadline,
 .bottom {
@@ -205,8 +204,6 @@ ul.grid {
   }
   .grid > .column {
     grid-column: span var(--columns);
-  }
-  .grid > .column {
     margin-bottom: var(--gutter);
     --columns: 2;
   }

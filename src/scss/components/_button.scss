@@ -11,7 +11,6 @@
   touch-action: manipulation;
   position: relative;
   white-space: nowrap;
-  border: none;
   padding: 12px 24px;
   font-size: 16px;
   font-weight: 600;
@@ -47,7 +46,7 @@
 .btn-default{
   background-color: var(--background-color-alpha);
   backdrop-filter: saturate(180%) blur(20px);
-  border: 0px;
+  border: 0;
 }
 .btn-small {
   font-size: 14px;

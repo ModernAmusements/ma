@@ -5,7 +5,7 @@
   "description": "Shady Tawfik",
   "scripts": {
     "test": "npx stylelint src/scss/index.scss || true",
-    "test-css": "stylelint '**/*.scss'; exit 0",
+    "test-scss": "stylelint '**/*.scss'; exit 0",
     "dev": "npm run development",
     "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "watch": "npm run development -- --watch",

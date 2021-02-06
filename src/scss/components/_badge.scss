@@ -6,8 +6,8 @@
   background: var(--foreground-color);
   color: var(--background-color);
   max-width: fit-content;
-  max-width:  intrinsic;         /* Safari/WebKit */
-  max-width:  -moz-max-content;  /* Firefox/Gecko */
+  max-width: intrinsic; /* Safari/WebKit */
+  max-width: -moz-max-content; /* Firefox/Gecko */
   position: absolute;
   left: 16px;
   top: 16px;

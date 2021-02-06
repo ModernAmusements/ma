@@ -41,7 +41,7 @@
   </article>
   <!-- FOOTER BLOG -->
   <!-- TAGS -->
-  <footer-blog-subpage>
+  <div class="footer-blog-subpage">
   <?php if (!empty($tags)): ?>
   <div class="footer-tags">
    <?= $page->subheading()->kt() ?>
@@ -74,7 +74,7 @@
             <h3><?= $page->date() ?></h3>
           </span>
       </article>
-  </footer-blog-subpage>
+  </div>
   <?php snippet('blog/prevnext') ?>
 </main>
 <?php snippet('subpageFooter/subpage') ?>

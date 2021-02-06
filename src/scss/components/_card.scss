@@ -54,14 +54,14 @@
 .card:hover {
   .card-cover {
     img {
-      filter: saturate(100%) blur(0px);
+      filter: saturate(100%) blur(0);
       transform: scale(1);
       transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
     }
   }
   .image {
     img {
-      filter: saturate(100%) blur(0px);
+      filter: saturate(100%) blur(0);
       transform: scale(1.2);
       transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
     }
@@ -91,21 +91,17 @@
 }
 @media (min-width: 320px) and (max-width: 1020px) {
   .card {
+    .card-header {
+      flex-direction: row;
+    }
     .card-content {
+      flex-direction: column;
       .card-cover {
         img {
           max-width: inherit;
           min-height: 200px;
         }
       }
-    }
-  }
-  .card {
-    .card-header {
-      flex-direction: row;
-    }
-    .card-content  {
-      flex-direction: column;
     }
   }
 }
@@ -136,7 +132,7 @@
       grid-row: 2;
       img {
         border-radius: 0;
-        border-left: 0px solid var(--foreground-color);
+        border-left: 0 solid var(--foreground-color);
         border-bottom: 1px solid var(--foreground-color);
         border-top: 1px solid var(--foreground-color);
       }
