@@ -1,3 +1,10 @@
+// Mix provides several features to help
+// you work with your JavaScript files, such
+// as compiling modern ECMAScript, module bundling,
+// minification, and concatenating plain JavaScript files.
+// Even better, this all works seamlessly,
+// without requiring an ounce of custom configuration:
+
 // jshint ignore: start
 /* eslint-disable */
 const mix = require('laravel-mix');

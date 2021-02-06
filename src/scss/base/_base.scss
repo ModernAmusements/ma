@@ -2,7 +2,7 @@
   --fontSize: 15px;
   --lineHeight: calc(var(--fontSize) * 1.5);
   --baseline: calc(var(--lineHeight) / 2);
-  --blockSpacingTop: 0px;
+  --blockSpacingTop: 0;
   --blockSpacingBottom: var(--lineHeight);
   --hrThickness: 1px;
   --h1-size: 2.8rem;
@@ -32,9 +32,9 @@
   --background-color-black-elevated: #151519;
   --background-color-elevated: #fbfbf9;
   --background-color-dark: #d0ccff;
-  --primary-color: #544AC1;
-  --primary-color-hover: #544AC1;
-  --primary-color-hover-light: #544AC1;
+  --primary-color: #544ac1;
+  --primary-color-hover: #544ac1;
+  --primary-color-hover-light: #544ac1;
   --overlay: rgba(0, 0, 0, 0.5);
   --error-form: #f91153;
   --sub-headline: #7b7b81;
@@ -43,69 +43,43 @@
   --trackBg: #bdbdbd;
   --trackFocus: #cacaca;
   --thumbBg: #666;
-   // FoontSettings
+  // FoontSettings
   --trackHeight: 1px;
   --thumbHeight: 12px;
   --thumbTouchHeight: 48px;
   --sliderToggleComponentBg: #f4f4f4;
   --shadow-dark: rgba(143, 54, 2, 0.3);
   --blur: 30px;
-  --spacing: 0px;
+  --spacing: 0;
   --rotation: (0deg);
   // BTN
   --b-r-small: 8px;
 }
 @supports (font-variation-settings: normal) {
   :root {
-    --sansFont: 'Rubik', 'Helvetica Neue', 'Helvetica', 'Arial',
-      sans-serif;
+    --sansFont: 'Rubik', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     --monoFont: 'iaw-mono-var';
   }
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-  only screen and (min-device-pixel-ratio: 1.5),
-  only screen and (min-resolution: 1.5dppx) {
+@media only screen and (min-resolution: 1.5dppx) {
   :root {
     --displayScale: 2;
     --pixel: 0.5px;
   }
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 2.5),
-  only screen and (min-device-pixel-ratio: 2.5),
-  only screen and (min-resolution: 2.5dppx) {
+@media only screen and (min-resolution: 2.5dppx) {
   :root {
     --displayScale: 3;
     --pixel: 0.34px;
   }
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 3.5),
-  only screen and (min-device-pixel-ratio: 3.5),
-  only screen and (min-resolution: 3.5dppx) {
+@media only screen and (min-resolution: 3.5dppx) {
   :root {
     --displayScale: 4;
     --pixel: 0.25px;
   }
 }
-// @media (min-width: 35rem) {
-//   :root {
-//     --ms-0: 0.75rem;
-//   }
-// }
-// @media (min-width: 45rem) {
-//   :root {
-//     --ms-0: 0.9rem;
-//   }
-// }
-// @media (min-width: 70rem) {
-//   :root {
-//     --ms-0: 1.1rem;
-//   }
-// }
-// @media (min-width: 95rem) {
-//   :root {
-//     --ms-0: 1.15rem;
-//   }
-// }
+
 * {
   font: inherit;
   line-height: inherit;
@@ -202,10 +176,10 @@ blockquote,
 q {
   quotes: none;
 }
-blockquote:after,
-blockquote:before,
-q:after,
-q:before {
+blockquote::after,
+blockquote::before,
+q::after,
+q::before {
   content: '';
   content: none;
 }
@@ -214,6 +188,7 @@ a:active,
 a:visited {
   color: inherit;
 }
+
 /* document */
 html {
   font-family: var(--sansFont), 'Helvetica Neue', 'Helvetica', 'Arial',
@@ -502,30 +477,27 @@ video {
   width: 100%;
   border-radius: var(--b-r-small);
 }
-.flex-end{
+.flex-end {
   display: flex;
   justify-content: flex-end;
 }
 
-.flex-directon-r{
- flex-direction: row;
+.flex-directon-r {
+  flex-direction: row;
 }
-.margin-right-s {
+.margin-right-s  {
   margin-right: 0.5rem;
 }
-.margin-top-s {
+.margin-top-s  {
   margin-top: 0.5rem;
 }
 
-
-
-a.left
-{
-    position: relative;
+a.left {
+  position: relative;
 }
 
 a.left:before {
-  content: "";
+  content: '';
   position: absolute;
   width: 0;
   height: 2px;
