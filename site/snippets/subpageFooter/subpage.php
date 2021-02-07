@@ -36,7 +36,9 @@
 </div>
 <!-- POP-UP MODAL -->
 <?php snippet('subpageFooter/popUpSubpage') ?>
+
 <?= js('assets/js/libs.js') ?>
 <?= js('assets/js/main.js', ['async' => false, 'defer' => true ]) ?>
+
 </body>
 </html>

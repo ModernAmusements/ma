@@ -51,8 +51,15 @@
                 </div>
                 <?php endforeach?>
               </div>
+              <div class="post-meta-row">
+                <?php foreach ($page->capabilitiesRow2()->split() as $tag): ?>
+                <div class="post-meta post-meta-s">
+                  <?=$tag?>
+                </div>
+                <?php endforeach?>
+              </div>
             </div>
-            <div class="flex-end call-to-action margin-top-s">
+            <div class="call-to-action">
               <a href="#fffModal" category="header-navigation" action="home" label="consultation-modal"
                 rel="modal:open">
                 <button class="btn margin-right-s btn-xsmall">Get in Contact</button>

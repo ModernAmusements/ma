@@ -43,6 +43,9 @@ header:not(.post-header) {
         height: 0;
       }
     }
+    .switch:hover{
+      cursor: pointer
+    }
     .switchBackground {
       margin-left: 2rem;
     }
@@ -91,6 +94,7 @@ header:not(.post-header) {
       margin-left: 0.2em;
     }
   }
+
   a:not(.home-logo):not(.dark-mode-toggle) {
     // width: 7.5rem;
     position: relative;

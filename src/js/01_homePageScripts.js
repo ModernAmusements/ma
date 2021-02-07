@@ -1,4 +1,5 @@
 // Preloader
+
 $(function() {
   $('#preload-homepage').click(function() {
     $(this)

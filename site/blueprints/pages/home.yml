@@ -61,6 +61,8 @@ columns:
         width: 1/2
       capabilities:
         type: tags
+      capabilitiesRow2:
+        type: tags
 
 
 

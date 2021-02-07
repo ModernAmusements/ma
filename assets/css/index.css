@@ -607,6 +607,10 @@ header:not(.post-header) .dark-mode-toggle .switchBackground input {
   height: 0;
 }
 
+header:not(.post-header) .dark-mode-toggle .switch:hover {
+  cursor: pointer;
+}
+
 header:not(.post-header) .dark-mode-toggle .switchBackground {
   margin-left: 2rem;
 }
@@ -1034,14 +1038,6 @@ footer {
     line-height: calc(var(--lineHeight) * 2.5) !important;
     font-weight: 500 !important;
   }
-
-  .call-to-action {
-    flex-direction: column;
-  }
-
-  .call-to-action a {
-    margin-top: 1em;
-  }
 }
 
 @media (min-width: 10px) and (max-width: 322px) {
@@ -1369,6 +1365,10 @@ nav.categories-mobile {
   transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0ms;
 }
 
+.post-header:hover {
+  cursor: pointer;
+}
+
 .post-header:hover .post-meta,
 .post-header:hover .post-title {
   color: var(--primary-color);
@@ -1377,20 +1377,6 @@ nav.categories-mobile {
 .post-header:hover .post-chevron::before,
 .post-header:hover .post-chevron::after {
   background: var(--primary-color);
-}
-
-.work-subpage-link:hover .more {
-  color: var(--primary-color);
-  transform: translateX(0);
-  transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0ms;
-}
-
-.work-subpage-link:hover svg {
-  fill: var(--primary-color);
-  width: 100%;
-  transform: scale(0.5);
-  transform: translateX(-10px);
-  transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0ms;
 }
 
 .slider {
@@ -2740,6 +2726,7 @@ main.work-subpage .work-subpage-content .subpage-information .text-counter {
 
 .post-meta-row {
   flex-direction: column;
+  margin-right: 1em;
 }
 
 .post-meta {
@@ -2760,6 +2747,7 @@ main.work-subpage .work-subpage-content .subpage-information .text-counter {
 
 .post-meta-capabilities {
   flex-direction: row;
+  justify-content: start;
 }
 
 .post-meta-capabilities .post-meta {
@@ -2773,6 +2761,12 @@ main.work-subpage .work-subpage-content .subpage-information .text-counter {
 
 .post-meta-s p {
   font-size: 0.8em;
+}
+
+@media (min-width: 300px) and (max-width: 480px) {
+  .post-meta-capabilities {
+    flex-direction: column;
+  }
 }
 
 .data-link {
@@ -2884,11 +2878,19 @@ main.work-subpage .work-subpage-content .subpage-information .text-counter {
 }
 
 .card-grid .card-grid-section-one {
-  display: flex;
-  flex-direction: column;
   position: relative;
   margin: 0;
   padding: 32px;
+}
+
+.card-grid .card-grid-section-one .card-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-grid .card-grid-section-one .card-title .call-to-action {
+  flex-direction: column;
+  margin-top: 2em;
 }
 
 .card-grid .links {
@@ -2913,7 +2915,7 @@ main.work-subpage .work-subpage-content .subpage-information .text-counter {
 @media only screen and (min-width: 1240px) {
   .card-grid {
     grid-template-rows: auto 1fr;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 55% 45%;
   }
 
   .card-grid .form-img {

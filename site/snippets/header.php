@@ -31,9 +31,8 @@
     <?= css('assets/css/index.css', true) ?>
     <!-- jQeury-->
     <?= js('assets/js/jquery.js') ?>
-    <!-- Typekit Preloader-->
-    <!-- <link rel="stylesheet preconnect" href="https://use.typekit.net/yxr4ufi.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" async></script> -->
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" async></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>

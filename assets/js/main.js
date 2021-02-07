@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -11003,33 +11003,6 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./src/js/01_fontPreloader.js":
-/*!************************************!*\
-  !*** ./src/js/01_fontPreloader.js ***!
-  \************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// jshint ignore: start
-
-/* eslint-disable */
-// const preloadFonts = (id) => {
-//    return new Promise((resolve, reject) => {
-//        WebFont.load({
-//            typekit: {
-//                id: id
-//            },
-//            active: resolve
-//        });
-//    });
-// };
-// preloadFonts('yxr4ufi').then(() => {
-//    document.body.classList.remove('loading');
-//    console.log('Neue Haas Unica Loaded')
-// });
-
-/***/ }),
-
 /***/ "./src/js/02_swiper.min.js":
 /*!*********************************!*\
   !*** ./src/js/02_swiper.min.js ***!
@@ -11037,7 +11010,7 @@ module.exports = function(module) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function($) {var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 /*
      _ _      _       _
@@ -11057,6 +11030,9 @@ module.exports = function(module) {
  */
 
 /* global window, document, define, jQuery, setInterval, clearInterval */
+// Added jquery
+var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+
 ;
 
 (function (factory) {
@@ -13770,7 +13746,6 @@ $(".blog-article-overview").each(function () {
     prevArrow: '<div class="slider__prev"></div>'
   });
 });
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
 
@@ -13779,9 +13754,9 @@ $(".blog-article-overview").each(function () {
   !*** ./src/js/03_darkmode.js ***!
   \*******************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-/* WEBPACK VAR INJECTION */(function($) {// DarkMode
+// DarkMode
 var inverted = localStorage.getItem('inverted');
 var invertedToggle = document.querySelector('#circle');
 var slider = document.querySelector('.sliderToggle');
@@ -13866,7 +13841,6 @@ function toggleInvertedMode() {
 
 bindTapableOption('inverted', toggleInvertedMode);
 updateInvertedLabel();
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
 
@@ -13906,9 +13880,9 @@ targets.forEach(lazyLoad);
   !*** ./src/js/06_mobile-nav.js ***!
   \*********************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-/* WEBPACK VAR INJECTION */(function($) {var $mobileNav = $('#mobile-nav');
+var $mobileNav = $('#mobile-nav');
 var $bugerMenu = $('#mobileIcon');
 $bugerMenu.click(function () {
   $bugerMenu.toggleClass('open');
@@ -13933,7 +13907,6 @@ $window.resize(function () {
     $bugerMenu.removeClass('open');
   }
 });
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
 
@@ -13944,7 +13917,7 @@ $window.resize(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module, jQuery) {function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+/* WEBPACK VAR INJECTION */(function(module) {function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 // jshint ignore: start
 
@@ -14053,18 +14026,7 @@ $window.resize(function () {
     e.preventDefault(), o(this).modal();
   });
 });
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/webpack/buildin/module.js */ "./node_modules/webpack/buildin/module.js")(module), __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
-
-/***/ }),
-
-/***/ "./src/js/08_work-page.js":
-/*!********************************!*\
-  !*** ./src/js/08_work-page.js ***!
-  \********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/webpack/buildin/module.js */ "./node_modules/webpack/buildin/module.js")(module)))
 
 /***/ }),
 
@@ -14103,7 +14065,7 @@ $window.resize(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module, $) {var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+/* WEBPACK VAR INJECTION */(function(module) {var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 /*
  * current-device v0.9.1 - https://github.com/matthewhudson/current-device
@@ -14322,7 +14284,7 @@ var aol = $.browser.aol(),
     win = $.browser.win(),
     userversion = $.browser.version.number();
 1 == mac ? $("html").addClass("mac") : 1 == linux ? $("html").addClass("linux") : 1 == win && $("html").addClass("windows"), "Safari" == userbrowser ? $("html").addClass("safari") : "Firefox" == userbrowser ? $("html").addClass("firefox") : "Camino" == userbrowser ? $("html").addClass("camino") : "AOL Explorer" == userbrowser ? $("html").addClass("aol") : "Flock" == userbrowser ? $("html").addClass("flock") : "iCab" == userbrowser ? $("html").addClass("icab") : "Konqueror" == userbrowser ? $("html").addClass("konqueror") : "Mozilla" == userbrowser ? $("html").addClass("mozilla") : "Netscape" == userbrowser ? $("html").addClass("netscape") : "Opera" == userbrowser ? $("html").addClass("opera") : "Internet Explorer" == userbrowser && $("html").addClass("ie"), $("html").addClass("" + userversion);
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/webpack/buildin/module.js */ "./node_modules/webpack/buildin/module.js")(module), __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/webpack/buildin/module.js */ "./node_modules/webpack/buildin/module.js")(module)))
 
 /***/ }),
 
@@ -14401,35 +14363,21 @@ window.onload = function () {
 
 /***/ }),
 
-/***/ "./src/scss/index.scss":
-/*!*****************************!*\
-  !*** ./src/scss/index.scss ***!
-  \*****************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ 0:
-/*!********************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** multi ./src/js/01_fontPreloader.js ./src/js/02_swiper.min.js ./src/js/03_darkmode.js ./src/js/04_intersectionObserver.js ./src/js/06_mobile-nav.js ./src/js/07_modal.js ./src/js/08_work-page.js ./src/js/09_plugins.js ./src/js/10_current-device.min.js ./src/js/11_cookieConsent.js ./src/scss/index.scss ***!
-  \********************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ 1:
+/*!****************************************************************************************************************************************************************************************************************************************!*\
+  !*** multi ./src/js/02_swiper.min.js ./src/js/03_darkmode.js ./src/js/04_intersectionObserver.js ./src/js/06_mobile-nav.js ./src/js/07_modal.js ./src/js/09_plugins.js ./src/js/10_current-device.min.js ./src/js/11_cookieConsent.js ***!
+  \****************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/shady/Desktop/ModernAmusment/src/js/01_fontPreloader.js */"./src/js/01_fontPreloader.js");
 __webpack_require__(/*! /Users/shady/Desktop/ModernAmusment/src/js/02_swiper.min.js */"./src/js/02_swiper.min.js");
 __webpack_require__(/*! /Users/shady/Desktop/ModernAmusment/src/js/03_darkmode.js */"./src/js/03_darkmode.js");
 __webpack_require__(/*! /Users/shady/Desktop/ModernAmusment/src/js/04_intersectionObserver.js */"./src/js/04_intersectionObserver.js");
 __webpack_require__(/*! /Users/shady/Desktop/ModernAmusment/src/js/06_mobile-nav.js */"./src/js/06_mobile-nav.js");
 __webpack_require__(/*! /Users/shady/Desktop/ModernAmusment/src/js/07_modal.js */"./src/js/07_modal.js");
-__webpack_require__(/*! /Users/shady/Desktop/ModernAmusment/src/js/08_work-page.js */"./src/js/08_work-page.js");
 __webpack_require__(/*! /Users/shady/Desktop/ModernAmusment/src/js/09_plugins.js */"./src/js/09_plugins.js");
 __webpack_require__(/*! /Users/shady/Desktop/ModernAmusment/src/js/10_current-device.min.js */"./src/js/10_current-device.min.js");
-__webpack_require__(/*! /Users/shady/Desktop/ModernAmusment/src/js/11_cookieConsent.js */"./src/js/11_cookieConsent.js");
-module.exports = __webpack_require__(/*! /Users/shady/Desktop/ModernAmusment/src/scss/index.scss */"./src/scss/index.scss");
+module.exports = __webpack_require__(/*! /Users/shady/Desktop/ModernAmusment/src/js/11_cookieConsent.js */"./src/js/11_cookieConsent.js");
 
 
 /***/ })

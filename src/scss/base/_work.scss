@@ -285,22 +285,9 @@ nav.categories-mobile {
   .post-chevron::after {
     background: var(--primary-color);
   }
+  cursor: pointer
 }
-// Subpage Link Hover
-.work-subpage-link:hover {
-  .more {
-    color: var(--primary-color);
-    transform: translateX(0);
-    transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0ms;
-  }
-  svg {
-    fill: var(--primary-color);
-    width: 100%;
-    transform: scale(0.5);
-    transform: translateX(-10px);
-    transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0ms;
-  }
-}
+
 // Post-Slider Images
 .slider {
   width: 100%;

@@ -5,6 +5,7 @@
 
 .post-meta-row {
   flex-direction: column;
+  margin-right: 1em;
 }
 
 .post-meta {
@@ -23,6 +24,8 @@
 
 .post-meta-capabilities {
   flex-direction: row;
+  justify-content: start;
+
 
   .post-meta {
     margin-right: 0.2em;
@@ -35,5 +38,12 @@
 
   p {
     font-size: 0.8em;
+  }
+}
+
+
+@media (min-width: 300px) and (max-width: 480px) {
+  .post-meta-capabilities {
+    flex-direction: column;
   }
 }
