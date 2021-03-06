@@ -2774,6 +2774,7 @@ main.work-subpage .work-subpage-content .subpage-information .text-counter {
 
 .post-meta-s p {
   font-size: 0.8em;
+  margin: 0;
 }
 
 @media (min-width: 300px) and (max-width: 480px) {
