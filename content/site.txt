@@ -62,7 +62,7 @@ Popupsubheadline03: Intuitive: Strong preference for engaging UX/UI
 
 Popupimage:
 
-- shady-tawfik-pp-02.jpg
+- shadytawfik-kraken.jpg
 
 ----
 
@@ -72,7 +72,7 @@ Altpopup: Javascript/TypeScript PHP/Laravel/MVC HTML/CSS/Bootstrap/SCSS vuejs/vu
 
 Succesimage:
 
-- shady-tawfik-302.jpg
+- shady1000px.png
 
 ----
 
@@ -96,7 +96,7 @@ Consentdeclaration03: You can object to being contacted at any time. The best wa
 
 ----
 
-Consentdeclaration04: You can find more information about data protection in our  (link: /datenschutz text: Data privacy policy).
+Consentdeclaration04: You can find more information about data protection in our  (link: /imprint text: Data privacy policy).
 
 ----
 

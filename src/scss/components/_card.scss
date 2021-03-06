@@ -27,8 +27,8 @@
         min-height: 200px;
         object-fit: cover;
         transform: scale(0.9);
-        filter: saturate(400%) blur(5px);
-        transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+        filter: saturate(300%) blur(2px);
+        transition: all 0.25s cubic-bezier(0.25, 0.1, 0.25, 1);
       }
     }
   }
@@ -46,8 +46,8 @@
       object-fit: cover;
       border: 0;
       transform: scale(1);
-      filter: saturate(500%) blur(20px);
-      transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+      filter: saturate(300%) blur(2px);
+      transition: all 0.25s cubic-bezier(0.25, 0.1, 0.25, 1);
     }
   }
 }

@@ -1,13 +1,13 @@
 <!-- POP-UP MODAL -->
 <?php if($success): ?>
 <div class="overlay">
-  <div id="confirmModal" class="modal show">
+<div id="confirmModal" class="modal show">
     <?php if ($succesImage = $site->succesImage()->toFile()->resize(600)): ?>
     <img class="lazy" data-src="<?= $succesImage->url() ?>" alt="<?= $site->altSuccess() ?>" />
     <?php endif ?>
-    <h3>Thank You!</h3>
-    <p><?= $success ?></br>Deine E-Mail-Adresse wurde erfolgreich bestätigt.</p>
-    <a href="<?= $page->url() ?>" aria-label="read more about seminole tax hike" rel="modal:close">close</a>
+    <h2 class="single-line">Thank You!</h2>
+    <p><?= $success ?></p>
+    <a class="left" href="<?= $page->url() ?>" aria-label="read more about seminole tax hike" rel="modal:close">Close</a>
   </div>
 </div>
 <?php else: ?>

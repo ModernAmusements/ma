@@ -62,13 +62,13 @@
             <div class="call-to-action">
               <a href="#fffModal" category="header-navigation" action="home" label="consultation-modal"
                 rel="modal:open">
-                <button class="btn margin-right-s btn-xsmall">Get in Contact</button>
+                <button class="btn margin-right-s margin-top-s  btn-xsmall">Get in Contact</button>
               </a>
               <a href="/about">
-                <button class="btn margin-right-s btn-xsmall btn-outline">CV</button>
+                <button class="btn margin-right-s margin-top-s btn-xsmall btn-outline">CV</button>
               </a>
               <a href="/works">
-                <button class="btn btn-xsmall btn-outline">Work</button>
+                <button class="btn btn-xsmall margin-top-s btn-outline">Work</button>
               </a>
             </div>
           </div>
@@ -82,7 +82,7 @@
       <?php if ($article = page('blog')): ?>
       <article class="card">
           <div class="image">
-            <?php if ($cover = $article->cover()->crop(600, 600, ['quality' => 100])): ?>
+            <?php if ($cover = $article->cover()->resize(800)): ?>
             <a href="<?=$article->url()?>">
             <img class="lazy blur" data-src="<?=$cover->url()?>" alt="<?=$cover->alt()?>" />
             </a>

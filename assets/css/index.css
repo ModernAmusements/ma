@@ -263,13 +263,18 @@ main {
 }
 
 .lazy {
-  opacity: 0;
-  transition: all 1ms;
+  transition-property: filter;
+  filter: blur(3px);
+  background-size: cover;
+  transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition-duration: 0.25s;
 }
 
 .blur {
-  opacity: 1;
-  transition: all 1ms;
+  filter: none;
+  transition-property: filter;
+  transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition-duration: 0.25s;
 }
 
 /* block */
@@ -2838,8 +2843,8 @@ main.work-subpage .work-subpage-content .subpage-information .text-counter {
   -o-object-fit: cover;
      object-fit: cover;
   transform: scale(0.9);
-  filter: saturate(400%) blur(5px);
-  transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  filter: saturate(300%) blur(2px);
+  transition: all 0.25s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .card .image {
@@ -2859,8 +2864,8 @@ main.work-subpage .work-subpage-content .subpage-information .text-counter {
      object-fit: cover;
   border: 0;
   transform: scale(1);
-  filter: saturate(500%) blur(20px);
-  transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  filter: saturate(300%) blur(2px);
+  transition: all 0.25s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .card:hover .card-cover img {
@@ -4262,6 +4267,24 @@ button {
   --scale: 1;
   opacity: 1;
   visibility: visible;
+}
+
+/* Change Autocomplete styles*/
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  --background: var(--background-color);
+  -webkit-text-fill-color: var(--background-color-dark);
+  -webkit-box-shadow: 0 0 0px 1000px var(--background-color) inset;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 .form-field {

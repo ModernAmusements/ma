@@ -48,7 +48,7 @@
     <div class="form">
       <form action="<?= $page->url() ?>" method="post" data-consultation="sales" data-parsley-validate>
         <div class="honeypot">
-          <label for="website">Website <abbr title="required">*</abbr></label>
+          <label for="website">Website<abbr title="required">*</abbr></label>
           <input type="website" id="website" name="website" />
         </div>
         <div class="form-parsley firstname">
@@ -87,10 +87,10 @@
           <div class="form-select">
             <select name="interests" value="<?= $data['interests'] ?? '' ?>">
               <option value="">Please select...</option>
-              <option value="Auftrag: Film">New web presence</option>
+              <option value="Auftrag: Film">Web Presence</option>
               <option value="Auftrag: Typografie">Consulting</option>
               <option value="Auftrag: Motion">Online store</option>
-              <option value="Auftrag: Animation">various</option>
+              <option value="Auftrag: Animation">Various</option>
             </select>
           </div>
         </div>
