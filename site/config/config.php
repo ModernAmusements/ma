@@ -44,8 +44,8 @@ return [
           'title' => $site->title(),
           'meta' => [
               'description' => $site->description(),
-              'description' => $site->additionalDescription(),
-              'behance:site' => $site->additionalDescription()
+              'descriptionAdditional' => $site->additionalDescription(),
+              'behance:site' => $site->behanceID()
 
               
           ],

@@ -1074,7 +1074,7 @@ nav.categories .categories-pills {
 }
 
 nav.categories li {
-  display: inline-flex;
+  display: inline-block;
 }
 
 nav.categories .category-button {
@@ -1657,7 +1657,6 @@ button {
   nav.categories .categories-pills.active-filters {
     margin: 0;
     margin: 0 -15px;
-    overflow: scroll;
     overflow-x: scroll;
     -ms-scroll-snap-type: x proximity;
         scroll-snap-type: x proximity;

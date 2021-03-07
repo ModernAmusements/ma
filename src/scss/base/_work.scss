@@ -15,7 +15,7 @@ nav.categories {
     margin-bottom: 0;
   }
   li {
-    display: inline-flex;
+    display: inline-block;
   }
   .category-button {
     border: 1px solid var(--foreground-color);
@@ -558,7 +558,6 @@ button {
     .categories-pills.active-filters {
       margin: 0;
       margin: 0 -15px;
-      overflow: scroll;
       overflow-x: scroll;
       scroll-snap-type: x proximity;
       scroll-snap-points-x: repeat(100%);

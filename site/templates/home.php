@@ -88,11 +88,11 @@
             </a>
             <?php endif?>
             <div data-link="" class="data-link">
-              <p>New Post!</p>
+              <p>Neuer Post!</p>
             </div>
           </div>
           <div class="card-header">
-            <p class="card-subheading margin-top-s">Updates: 19 January 2021</p>
+            <p class="card-subheading margin-top-s">Entwickler News</p>
           </div>
           <div class="card-title">
             <h2>
