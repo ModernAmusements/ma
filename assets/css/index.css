@@ -33,9 +33,9 @@
   --background-color-black-elevated: #151519;
   --background-color-elevated: #fbfbf9;
   --background-color-dark: #d0ccff;
-  --primary-color: #544ac1;
+  --primary-color: #7065f2;
   --primary-color-hover: #544ac1;
-  --primary-color-hover-light: #544ac1;
+  --primary-color-hover-dark: #544ac1;
   --overlay: rgba(0, 0, 0, 0.5);
   --error-form: #f91153;
   --sub-headline: #7b7b81;
@@ -1019,7 +1019,7 @@ footer {
   justify-self: start;
 }
 
-@media (min-width: 320px) and (max-width: 720px) {
+@media (min-width: 320px) and (max-width: 760px) {
   .pageContent {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1037,19 +1037,6 @@ footer {
     justify-self: start;
   }
 
-  h1.xlarge,
-  .h1.xlarge {
-    --h1-size: 3.5rem !important;
-    line-height: calc(var(--lineHeight) * 2.5) !important;
-    font-weight: 500 !important;
-  }
-}
-
-@media (min-width: 10px) and (max-width: 322px) {
-  .home-page-image img {
-    max-width: 273px;
-  }
-
   .intro-items h1.xlarge {
     font-size: 2em;
   }
@@ -1058,6 +1045,12 @@ footer {
     font-size: 1.5em;
     margin-top: calc(var(--lineHeight) * 1);
     margin-bottom: calc(var(--lineHeight) * 1);
+  }
+}
+
+@media (min-width: 10px) and (max-width: 322px) {
+  .home-page-image img {
+    max-width: 273px;
   }
 }
 
@@ -1636,6 +1629,7 @@ button {
   nav.categories {
     padding: calc(var(--lineHeight) * 0.25) 0;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 25px;
     grid-row-gap: calc(var(--rowGap) * 0.25);
   }
 
@@ -2652,6 +2646,8 @@ main.work-subpage .work-subpage-content .subpage-information .text-counter {
   --y: -1px;
   --shadowPos: 4px;
   color: var(--background-color);
+  background: var(--primary-color-hover-dark);
+  border: 1px solid var(--primary-color-hover-dark);
 }
 
 .btn:not(:last-child) {
@@ -2664,7 +2660,9 @@ main.work-subpage .work-subpage-content .subpage-information .text-counter {
 }
 
 .btn-outline:hover {
+  background: transparent;
   color: var(--foreground-color);
+  border: 1px solid var(--foreground-color);
 }
 
 .btn-default {
@@ -2682,20 +2680,12 @@ main.work-subpage .work-subpage-content .subpage-information .text-counter {
   border-radius: 5px;
 }
 
-.btn-small:hover {
-  color: var(--foreground-color);
-}
-
 .btn-xsmall {
   font-size: 12px;
   padding: 6px 16px;
   min-width: 80px;
   font-weight: 500;
   border-radius: 5px;
-}
-
-.btn-xsmall:hover {
-  color: var(--foreground-color);
 }
 
 .btn-large {
@@ -2717,7 +2707,7 @@ main.work-subpage .work-subpage-content .subpage-information .text-counter {
 }
 
 .btn-large:hover {
-  background: var(--primary-color-hover-light);
+  background: var(--primary-color-hover-dark);
   color: var(--background-color);
   --y: -1px;
 }

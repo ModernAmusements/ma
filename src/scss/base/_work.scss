@@ -534,6 +534,7 @@ button {
   nav.categories {
     padding: calc(var(--lineHeight) * 0.25) 0;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 25px;
     grid-row-gap: calc(var(--rowGap) * 0.25);
     button {
       background: 0 0;

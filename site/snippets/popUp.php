@@ -80,7 +80,7 @@
         <div class="form-parsley birthday">
           <label for="birthday">Date of birth*</label>
           <input name="birthday" type="text" class="form-field birthdayMask" placeholder="TT.MM.JJJJ"
-            data-parsley-valid-date required="" value="<?= $data['birthday'] ?? '' ?>" />
+            data-parsley-valid-date ="" value="<?= $data['birthday'] ?? '' ?>" />
         </div>
         <div class="form-parsley reason">
           <label for="interests">Reason*</label>
