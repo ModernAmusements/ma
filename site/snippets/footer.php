@@ -11,22 +11,22 @@
 </section>
 <footer>
     <div class="footer-nav">
-        <a class="left" aria-label="Read more about Seminole tax hike" href="imprint">
-           Licensing Terms
+        <a class="left" target="_blank" aria-label="link to shady tawfik github account" href="https://github.com/ModernAmusements">
+           Github
         </a>
-        <a class="left"  aria-label="Read more about Seminole tax hike" href="imprint">
+        <a class="left"  aria-label="link to Privacy & Cookies" href="imprint">
            Privacy & Cookies
         </a>
-        <a class="left"  aria-label="Read more about Seminole tax hike" href="imprint">
+        <a class="left"  aria-label="link to Contact" href="imprint">
             Contact
         </a>
-        <a class="left"  aria-label="Read more about Seminole tax hike" href="imprint">
+        <a class="left"  aria-label="link to Imprint" href="imprint">
             Imprint
         </a>
     </div>
     <div class="legal">
         <strong class="margin-right-s">©2016-<?= date('Y') ?></strong>
-        <a aria-label="Read more about Seminole tax hike" href="/about">
+        <a aria-label="link to about" href="/about">
            Modern Amusment™ Shady Tawfik
         </a>
     </div>

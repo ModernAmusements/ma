@@ -106,7 +106,7 @@
           </div>
           <div class="flex-end">
           <a href="<?=$article->url()?>">
-            <button class="btn btn-small">Read articles</button>
+            <button class="btn btn-small">Artikel lesen</button>
           </a>
         </div>
       </article>
@@ -115,7 +115,7 @@
     <section class="right">
       <div class="homepage-info-header">
         <a href="/works">
-          <button class="btn btn-xsmall btn-default">Show All Projects</button>
+          <button class="btn btn-xsmall btn-outline">Show All Projects</button>
         </a>
       </div>
       <div class="homepage-info">

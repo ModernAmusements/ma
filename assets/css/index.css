@@ -1957,11 +1957,6 @@ main.work-subpage .work-subpage-content .subpage-information #barba-wrapper vide
   object-fit: cover;
 }
 
-main.work-subpage .work-subpage-content .subpage-information .work-videos,
-main.work-subpage .work-subpage-content .subpage-information .work-images {
-  padding: calc(var(--lineHeight) * 1) 0;
-}
-
 main.work-subpage .work-subpage-content .subpage-information .work-videos p,
 main.work-subpage .work-subpage-content .subpage-information .work-images p {
   border-bottom: 1px solid var(--foreground-color);
