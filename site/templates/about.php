@@ -45,11 +45,10 @@
         </div>
         <div class="subpage-contact">
           <p class="sub-sub-heading small">VI. Get In Touch</p>
-
             <?= $page->street() ?><br />
             <?= $page->zip() ?>
             <?= $page->city() ?><br />
-            <?= $page->country() ?>
+           <p><?= $page->country() ?></p>
             Email:
             <?= Html::email($page->email()) ?><br />
             Phone:
@@ -62,8 +61,8 @@
           <div class="work-legend">
             <h3 class="large"><?= $page->company() ?></h3>
             <h3 class="flex-start large">
-              Designer<br />
-              Enjoying VR
+              Web Developer<br />
+              Graphic Designer
             </h3>
           </div>
         </article>
