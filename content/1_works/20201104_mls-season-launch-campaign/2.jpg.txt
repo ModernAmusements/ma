@@ -1,9 +1,0 @@
-Caption: 
-
-----
-
-Template: work-image
-
-----
-
-Sort: 2

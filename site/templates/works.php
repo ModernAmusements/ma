@@ -97,10 +97,10 @@
           <section class="post-gallery">
             <article class="work-videos">
               <?php foreach ($work->videos()->template('work-videos') as
-              $image): ?>
+              $video): ?>
               <div class="video-wrapper post-video" data-state="not-init">
-                <video loop playsinline preload="metadata" poster="">
-                  <source src="<?= $image->url() ?>" type="video/mp4" />
+                <video loop playsinline preload="auto" poster="">
+                  <source src="<?= $video->url() ?>" type="video/mp4" />
                 </video>
                 <button class="intro-play"><span>Play</span></button>
                 <div class="vid-controls">

@@ -41,10 +41,10 @@
             <section class="post-gallery">
               <article class="work-videos">
                 <?php foreach ($page->videos()->template('work-videos') as
-                $image): ?>
+                $video): ?>
                 <div class="video-wrapper post-video" data-state="not-init">
-                  <video loop playsinline preload="metadata" alt="<?= $image->alt() ?>" poster="">
-                    <source src="<?= $image->url() ?>" type="video/mp4" />
+                  <video loop playsinline preload="auto" alt="<?= $video->alt() ?>" poster="">
+                    <source src="<?= $video->url() ?>" type="video/mp4" />
                   </video>
                   <button class="intro-play"><span>Play</span></button>
                   <div class="vid-controls">
@@ -64,9 +64,9 @@
                 </div>
                 <?php endforeach ?>
                 <?php foreach ($page->videos()->template('work-videos') as
-                $image): ?>
+                $video): ?>
                 <p class="vid-sub-heading">
-                <?= $image->alt() ?> </p>
+                <?= $video->alt() ?> </p>
                 <?php endforeach ?>
               </article>
               <article class="work-images">
