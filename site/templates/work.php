@@ -1,4 +1,6 @@
 <?php
+
+
 ?>
 <?php snippet('header') ?>
 <main class="work-subpage">
@@ -39,11 +41,24 @@
         <div class="barba-container one left" data-namespace="index-page">
           <div class="subpage-gallery" id="index">
             <section class="post-gallery">
+              <article class="work-images">
+                <div class="slider">
+                  <?php if ($image = $page->image()->resize(1080)): ?>
+                  <?php foreach ($page->images()->template('work-image') as
+                  $image): ?>
+                  <img data-lazy="<?= $image->url() ?>" alt="<?= $cover->alt() ?>" />
+                  <?php endforeach ?>
+                  <?php endif ?>
+                </div>
+                <div class="text-counter"></div>
+                <p class="vid-sub-heading">
+                <?= $cover->alt() ?> </p>
+              </article>
               <article class="work-videos">
                 <?php foreach ($page->videos()->template('work-videos') as
                 $video): ?>
                 <div class="video-wrapper post-video" data-state="not-init">
-                  <video loop playsinline preload="auto" alt="<?= $video->alt() ?>" poster="">
+                  <video loop playsinline preload="auto" alt="<?= $video->alt() ?>" poster="<?= $image->url() ?>">
                     <source src="<?= $video->url() ?>" type="video/mp4" />
                   </video>
                   <button class="intro-play"><span>Play</span></button>
@@ -68,19 +83,6 @@
                 <p class="vid-sub-heading">
                 <?= $video->alt() ?> </p>
                 <?php endforeach ?>
-              </article>
-              <article class="work-images">
-                <div class="slider">
-                  <?php if ($image = $page->image()->resize(1080)): ?>
-                  <?php foreach ($page->images()->template('work-image') as
-                  $image): ?>
-                  <img data-lazy="<?= $image->url() ?>" alt="<?= $cover->alt() ?>" />
-                  <?php endforeach ?>
-                  <?php endif ?>
-                </div>
-                <div class="text-counter"></div>
-                <p class="vid-sub-heading">
-                <?= $cover->alt() ?> </p>
               </article>
             </section>
           </div>

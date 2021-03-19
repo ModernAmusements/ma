@@ -26,4 +26,4 @@ mix.js([
 
 mix.sass('src/scss/index.scss', 'assets/css');
 
-mix.browserSync('http://modernamusment.test/');
+// mix.browserSync('http://modernamusment.test/');

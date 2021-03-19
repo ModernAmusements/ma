@@ -1330,7 +1330,7 @@ nav.categories-mobile {
 
 .post-content .post-gallery video[poster] {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .post-content .video-wrapper {
@@ -1954,7 +1954,7 @@ main.work-subpage .work-subpage-content .subpage-information #barba-wrapper vide
 
 main.work-subpage .work-subpage-content .subpage-information #barba-wrapper video[poster] {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 main.work-subpage .work-subpage-content .subpage-information .work-videos p,

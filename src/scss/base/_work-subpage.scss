@@ -71,7 +71,6 @@ main.work-subpage {
           border-radius: var(--b-r-small);
         }
         video[poster] {
-          -o-object-fit: cover;
           object-fit: cover;
         }
       }

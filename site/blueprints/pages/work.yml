@@ -39,6 +39,13 @@ columns:
           query: file.videoposter
           cover: true
         size: small
+      poster:
+        type: files
+        layout: list
+        template: work-cover
+        info: "{{ file.dimensions }}"
+        image:
+          cover: true
       images:
         type: files
         layout: list

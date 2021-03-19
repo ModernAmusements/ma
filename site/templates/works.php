@@ -95,11 +95,25 @@
             </a>
           </article>
           <section class="post-gallery">
+            <article class="work-images">
+              <div class="slider">
+                <?php if ($cover = $work->cover()->resize(1080)) : ?>
+                <img data-lazy="<?= $cover->url() ?>" alt="<?= $cover->alt() ?>" />
+                <?php endif ?>
+
+
+                <?php foreach ($work->images()->template('work-image') as
+                  $image): ?>
+                <img data-lazy="<?= $image->resize(1080)->url() ?>" alt="<?= $cover->alt() ?>" />
+                <?php endforeach ?>
+              </div>
+              <div class="text-counter"></div>
+            </article>
             <article class="work-videos">
               <?php foreach ($work->videos()->template('work-videos') as
               $video): ?>
               <div class="video-wrapper post-video" data-state="not-init">
-                <video loop playsinline preload="auto" poster="">
+                <video loop playsinline preload="auto" poster="<?= $image->url() ?>">
                   <source src="<?= $video->url() ?>" type="video/mp4" />
                 </video>
                 <button class="intro-play"><span>Play</span></button>
@@ -119,20 +133,6 @@
                 </div>
               </div>
               <?php endforeach ?>
-            </article>
-            <article class="work-images">
-              <div class="slider">
-                <?php if ($cover = $work->cover()->resize(1080)) : ?>
-                <img data-lazy="<?= $cover->url() ?>" alt="<?= $cover->alt() ?>" />
-                <?php endif ?>
-
-
-                <?php foreach ($work->images()->template('work-image') as
-                  $image): ?>
-                <img data-lazy="<?= $image->resize(1080)->url() ?>" alt="<?= $cover->alt() ?>" />
-                <?php endforeach ?>
-              </div>
-              <div class="text-counter"></div>
             </article>
           </section>
         </section>
