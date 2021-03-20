@@ -31,6 +31,9 @@ main.work-subpage {
       display: grid;
       grid-template-columns: repeat(8, 1fr);
       grid-column-gap: 10px;
+      a {
+        text-decoration: underline;
+      }
       ul{
         padding-left: 0;
       }

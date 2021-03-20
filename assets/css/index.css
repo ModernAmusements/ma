@@ -1900,6 +1900,10 @@ main.work-subpage .work-subpage-content .subpage-information {
   grid-column-gap: 10px;
 }
 
+main.work-subpage .work-subpage-content .subpage-information a {
+  text-decoration: underline;
+}
+
 main.work-subpage .work-subpage-content .subpage-information ul {
   padding-left: 0;
 }

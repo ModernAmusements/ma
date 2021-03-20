@@ -45,8 +45,9 @@
         </div>
         <div class="subpage-contact">
           <p class="sub-sub-heading small">VI. Get In Touch</p>
+
             <?= $page->street() ?><br />
-            <?= $page->zip() ?>
+            <?= $page->zip() ?><br />
             <?= $page->city() ?><br />
            <p><?= $page->country() ?></p>
             Email:
