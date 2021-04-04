@@ -1,4 +1,4 @@
-# Kirby .htaccess
+# .htaccess
 
 # rewrite rules
 <IfModule mod_rewrite.c>
@@ -98,4 +98,17 @@ AddOutputFilterByType DEFLATE application/x-javascript
     <filesMatch ".(css)$">
         Header set Cache-Control "max-age=604800, public"
     </filesMatch>
+
+
+
+    # Extra Security Headers
+    Header add Strict-Transport-Security "max-age=15768000;includeSubdomains"
+    Header set Referrer-Policy no-referrer
+    Header set Feature-Policy "camera 'none'; microphone 'none'; geolocation 'none'; payment 'none';"
+    Header set Content-Security-Policy "default-src 'self';"
+    Header set X-XSS-Protection "1; mode=block"
+    Header always append X-Frame-Options SAMEORIGIN
+    Header set X-Content-Type-Options nosniff
+
+
 </ifModule>
