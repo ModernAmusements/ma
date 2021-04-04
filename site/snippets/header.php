@@ -1,4 +1,13 @@
 <?php
+header('X-Clacks-Overhead: "GNU Terry Pratchett"');
+header('X-XSS-Protection: 1;mode=block');
+header('X-Content-Type-Options: nosniff');
+header('X-Frame-Options: SAMEORIGIN');
+header('Expect-CT: enforce,max-age=2592000');
+header('Content-Language: en');
+header('Referrer-Policy: origin-when-cross-origin');
+header('Strict-Transport-Security: max-age=31536000; includeSubDomains');
+header('Permissions-Policy: geolocation=(self "https://shady-tawfik.de/"), microphone=()');
 ?>
 <!doctype html>
 <html lang="de" id="invertme">
