@@ -33,7 +33,7 @@ return function($kirby, $pages, $page) {
                     'template' => 'email',
                     'from'     => 'noreply@info.de',
                     'replyTo'  => $data['email'],
-                    'to'       => 'info@shady-tawfik.de',
+                    'to'       => 'amusementsmodern@gmail.com',
                     'subject'  => esc($data['firstName']) . ' wants to work with you!',
                     'data'     => [
                         'sender'        => esc($data['firstName']),
