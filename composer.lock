@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "42b3f8624f23206c4c001fb84a957a50",
+    "content-hash": "7b4b427ae3bcacb2411e0f38321fbf69",
     "packages": [
         {
             "name": "claviska/simpleimage",
@@ -44,6 +44,37 @@
             ],
             "description": "A PHP class that makes working with images as simple as possible.",
             "time": "2019-09-26T01:22:02+00:00"
+        },
+        {
+            "name": "diverently/laravel-mix-kirby",
+            "version": "1.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Diverently/laravel-mix-kirby.git",
+                "reference": "91fe17d6634083cab9417c4e9477021554851aa7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Diverently/laravel-mix-kirby/zipball/91fe17d6634083cab9417c4e9477021554851aa7",
+                "reference": "91fe17d6634083cab9417c4e9477021554851aa7",
+                "shasum": ""
+            },
+            "require": {
+                "getkirby/composer-installer": "^1.1"
+            },
+            "type": "kirby-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Robert Cordes",
+                    "email": "robert@diverently.com"
+                }
+            ],
+            "description": "Laravel Mix helper for the Kirby CMS",
+            "time": "2021-04-09T12:38:46+00:00"
         },
         {
             "name": "filp/whoops",
@@ -167,24 +198,23 @@
         },
         {
             "name": "getkirby/composer-installer",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/getkirby/composer-installer.git",
-                "reference": "240a8b2c275d61b66601feb58222b7d34bc6cf1e"
+                "reference": "c98ece30bfba45be7ce457e1102d1b169d922f3d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/getkirby/composer-installer/zipball/240a8b2c275d61b66601feb58222b7d34bc6cf1e",
-                "reference": "240a8b2c275d61b66601feb58222b7d34bc6cf1e",
+                "url": "https://api.github.com/repos/getkirby/composer-installer/zipball/c98ece30bfba45be7ce457e1102d1b169d922f3d",
+                "reference": "c98ece30bfba45be7ce457e1102d1b169d922f3d",
                 "shasum": ""
             },
             "require": {
                 "composer-plugin-api": "^1.0 || ^2.0"
             },
             "require-dev": {
-                "composer/composer": "^1.8 || 2.0.*@dev",
-                "phpunit/phpunit": "^7.0"
+                "composer/composer": "^1.8 || ^2.0"
             },
             "type": "composer-plugin",
             "extra": {
@@ -201,7 +231,13 @@
             ],
             "description": "Kirby's custom Composer installer for the Kirby CMS and for Kirby plugins",
             "homepage": "https://getkirby.com",
-            "time": "2020-09-13T14:43:34+00:00"
+            "funding": [
+                {
+                    "url": "https://getkirby.com/buy",
+                    "type": "custom"
+                }
+            ],
+            "time": "2020-12-28T12:54:39+00:00"
         },
         {
             "name": "laminas/laminas-escaper",

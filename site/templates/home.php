@@ -355,5 +355,5 @@
   window.onload = date_time('date_time');
 
 </script>
-<?=js('assets/js/homePageScripts.js', true)?>
+<?php echo mix('/js/homePageScripts.js', true)?>
 <?php snippet('footer')?>

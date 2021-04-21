@@ -37,7 +37,7 @@ header('Permissions-Policy: geolocation=(self "https://shady-tawfik.de/"), micro
     <!-- Meta Information-->
     <?php echo $page->metaTags() ?>
     <!-- Stylesheets Async CSS-->
-    <?= css('assets/css/index.css', true) ?>
+    <?php echo mix('/css/index.css', true)?>
     <!-- jQeury-->
     <?= js('assets/js/jquery.js') ?>
   
