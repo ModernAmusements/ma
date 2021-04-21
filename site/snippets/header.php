@@ -54,7 +54,7 @@ header('Permissions-Policy: geolocation=(self "https://shady-tawfik.de/"), micro
       gtag('config', 'G-XEQ2CN76LB');
     </script>
 </head>
-<body>
+<body class="">
     <header>
         <a href="/home" class="home-logo">
         <div class="large">
@@ -149,3 +149,12 @@ header('Permissions-Policy: geolocation=(self "https://shady-tawfik.de/"), micro
         </a> -->
         </nav>
     </header>
+
+    <div id="page-loader">
+        <div class="tva-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+      </div>

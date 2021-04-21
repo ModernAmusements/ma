@@ -1,5 +1,6 @@
 // jshint ignore: start
 /* eslint-disable */
+var $ = require("jquery");
 
 const cookieStorage = {
   getItem: (item) => {
@@ -15,24 +16,30 @@ const cookieStorage = {
 }
 
 const storageType = cookieStorage;
-const consentPropertyName = 'jdc_consent';
+const consentPropertyName = 'shady_tawfik_consent';
 const shouldShowPopup = () => !storageType.getItem(consentPropertyName);
 const saveToStorage = () => storageType.setItem(consentPropertyName, true);
 
-window.onload = () => {
 
-  const acceptFn = event => {
-      saveToStorage(storageType);
-      consentPopup.classList.add('hidden');
-  }
-  const consentPopup = document.getElementById('consent-popup');
-  const acceptBtn = document.getElementById('accept');
-  acceptBtn.addEventListener('click', acceptFn);
+    window.onload = () => {
 
-  if (shouldShowPopup(storageType)) {
-      setTimeout(() => {
-          consentPopup.classList.remove('hidden');
-      }, 2000);
-  }
+        setTimeout(() => {
+            const acceptFn = event => {
+                saveToStorage(storageType);
+                consentPopup.classList.add('hidden');
+            }
+            const consentPopup = document.getElementById('consent-popup');
+            const acceptBtn = document.getElementById('accept');
+            acceptBtn.addEventListener('click', acceptFn);
 
-};
+            if (shouldShowPopup(storageType)) {
+                setTimeout(() => {
+                    consentPopup.classList.remove('hidden');
+                }, 2000);
+            }
+        }, 4000);
+
+      };
+
+
+

@@ -36,6 +36,7 @@
     <a id="accept" href="#">Accept</a>
 </div>
 <?php snippet('popUp') ?>
+<?php echo mix('/js/homePageScripts.js', true)?>
 <?= js('assets/js/libs.js') ?>
 <?php echo mix('/js/main.js') ?>
 </body>

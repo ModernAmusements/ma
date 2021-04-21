@@ -1,22 +1,4 @@
 <?php snippet('header') ?>
-<div class="about-page">
-  <section class="cover-animation">
-    <div class="type-loop">
-      <span class="cover-heading loop-right"
-        >––––<?= $page->heading()->html() ?>––––––––<?= $page->heading()->html()?>––––––––<?= $page->heading()->html()
-        ?>––––––––<?= $page->heading()->html() ?>––––––––<?= $page->heading()->html()?>––––––––<?= $page->heading()->html()
-        ?>––––</span
-      >
-    </div>
-    <div class="type-loop">
-      <span class="cover-heading loop-left"
-        >––––<?= $page->subheading()->html() ?>––––––––<?= $page->subheading()->html()?>––––––––<?= $page->subheading()->html()
-        ?>––––––––<?= $page->subheading()->html() ?>––––––––<?= $page->subheading()->html()?>––––––––<?= $page->subheading()->html()
-        ?>––––</span
-      >
-    </div>
-  </section>
-</div>
 <main>
   <section class="about-page">
     <section class="work-subpage-content">

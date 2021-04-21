@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'email' => 'amusementsmodern@admin.de',
+    'email' => 'hallo@shady-tawfik.de',
     'language' => 'en',
     'name' => 'Shady Tawfik',
     'role' => 'admin'

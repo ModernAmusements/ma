@@ -36,9 +36,9 @@
 </div>
 <!-- POP-UP MODAL -->
 <?php snippet('subpageFooter/popUpSubpage') ?>
-
+<?php echo mix('/js/homePageScripts.js', true)?>
 <?= js('assets/js/libs.js') ?>
-<?= js('assets/js/main.js', ['async' => false, 'defer' => true ]) ?>
+<?php echo mix('/js/main.js') ?>
 
 </body>
 </html>

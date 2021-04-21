@@ -14293,7 +14293,7 @@ var aol = $.browser.aol(),
   !*** ./src/js/11_cookieConsent.js ***!
   \************************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
@@ -14316,6 +14316,8 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 // jshint ignore: start
 
 /* eslint-disable */
+var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+
 var cookieStorage = {
   getItem: function getItem(item) {
     var cookies = document.cookie.split(';').map(function (cookie) {
@@ -14334,7 +14336,7 @@ var cookieStorage = {
   }
 };
 var storageType = cookieStorage;
-var consentPropertyName = 'jdc_consent';
+var consentPropertyName = 'shady_tawfik_consent';
 
 var shouldShowPopup = function shouldShowPopup() {
   return !storageType.getItem(consentPropertyName);
@@ -14345,20 +14347,22 @@ var saveToStorage = function saveToStorage() {
 };
 
 window.onload = function () {
-  var acceptFn = function acceptFn(event) {
-    saveToStorage(storageType);
-    consentPopup.classList.add('hidden');
-  };
+  setTimeout(function () {
+    var acceptFn = function acceptFn(event) {
+      saveToStorage(storageType);
+      consentPopup.classList.add('hidden');
+    };
 
-  var consentPopup = document.getElementById('consent-popup');
-  var acceptBtn = document.getElementById('accept');
-  acceptBtn.addEventListener('click', acceptFn);
+    var consentPopup = document.getElementById('consent-popup');
+    var acceptBtn = document.getElementById('accept');
+    acceptBtn.addEventListener('click', acceptFn);
 
-  if (shouldShowPopup(storageType)) {
-    setTimeout(function () {
-      consentPopup.classList.remove('hidden');
-    }, 2000);
-  }
+    if (shouldShowPopup(storageType)) {
+      setTimeout(function () {
+        consentPopup.classList.remove('hidden');
+      }, 2000);
+    }
+  }, 4000);
 };
 
 /***/ }),

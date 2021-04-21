@@ -1,6 +1,4 @@
 <?php
-
-
 ?>
 <?php snippet('header') ?>
 <main class="work-subpage">
