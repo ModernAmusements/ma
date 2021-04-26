@@ -255,20 +255,22 @@
   }
   .post-meta-information {
     grid-column: 4 / 8;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
     .post-tags {
       display: flex;
       flex-direction: row;
       tags {
         margin-left: 5px;
-        padding: 0 30px;
+        padding: 0 20px;
         white-space: nowrap;
       }
     }
     .post-date {
-      display: flex;
-      align-items: center;
+      display: grid;
+      align-self: center;
+      justify-content: end;
     }
     p {
       margin: 0;

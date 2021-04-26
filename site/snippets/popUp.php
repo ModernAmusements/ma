@@ -87,13 +87,13 @@
           <div class="form-select">
             <select name="interests" value="<?= $data['interests'] ?? '' ?>">
               <option value="">Please select...</option>
-              <option value="Auftrag: Web Presence">Web Presence</option>
-              <option value="Auftrag: Portfolio">Portfolio</option>
-              <option value="Auftrag: Consulting">Consulting</option>
-              <option value="Auftrag: Application">Application</option>
-              <option value="Auftrag: Online store">Online store</option>
-              <option value="Auftrag: Various">Various</option>
-              <option value="Auftrag: Other">Other</option>
+              <option value="Order: Web Presence">Web Presence</option>
+              <option value="Order: Portfolio">Portfolio</option>
+              <option value="Order: Consulting">Consulting</option>
+              <option value="Order: Application">Application</option>
+              <option value="Order: Online store">Online store</option>
+              <option value="Order: Various">Various</option>
+              <option value="Order: Other">Other</option>
             </select>
           </div>
         </div>

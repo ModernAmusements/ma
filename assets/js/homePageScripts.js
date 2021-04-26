@@ -1,2 +1,178 @@
-!function(e){var o={};function t(n){if(o[n])return o[n].exports;var a=o[n]={i:n,l:!1,exports:{}};return e[n].call(a.exports,a,a.exports,t),a.l=!0,a.exports}t.m=e,t.c=o,t.d=function(e,o,n){t.o(e,o)||Object.defineProperty(e,o,{enumerable:!0,get:n})},t.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},t.t=function(e,o){if(1&o&&(e=t(e)),8&o)return e;if(4&o&&"object"==typeof e&&e&&e.__esModule)return e;var n=Object.create(null);if(t.r(n),Object.defineProperty(n,"default",{enumerable:!0,value:e}),2&o&&"string"!=typeof e)for(var a in e)t.d(n,a,function(o){return e[o]}.bind(null,a));return n},t.n=function(e){var o=e&&e.__esModule?function(){return e.default}:function(){return e};return t.d(o,"a",o),o},t.o=function(e,o){return Object.prototype.hasOwnProperty.call(e,o)},t.p="/",t(t.s=0)}({0:function(e,o,t){t("rHqA"),e.exports=t("hZTp")},hZTp:function(e,o){},rHqA:function(e,o){$((function(){$("#preload-homepage").click((function(){$(this).fadeOut("3000").remove()})),sessionStorage.getItem("homePagePreloader")?($("#preload-homepage").css("display","none"),$("body").removeClass("animation")):(sessionStorage.setItem("homePagePreloader",!0),$("#preload-homepage").css("opacity","1"),$("#preload-homepage").addClass("is-desktop"),setTimeout((function(){var e=document.getElementById("loader-txt-wrap").children;e[1].innerHTML="6",e[1].classList.add("fade-up"),setTimeout((function(){e[4].innerHTML="8",e[4].classList.add("fade-up"),setTimeout((function(){e[7].innerHTML="5",e[7].classList.add("fade-up"),setTimeout((function(){e[2].innerHTML="7",e[2].classList.add("fade-up"),setTimeout((function(){e[5].innerHTML="1",e[5].classList.add("fade-up")}),500)}),500)}),500)}),500)}),2e3),setTimeout((function(){$("#preload-homepage").removeClass("is-desktop"),$("#preload-homepage").addClass("preload-end"),setTimeout((function(){$("#preload-homepage").css("display","none")}),1e3)}),4e3))})),$((function(){sessionStorage.getItem("pageLoader")?$("#preload-homepage").addClass("loading"):($("#preload-homepage").addClass("loading"),$("body").removeClass("animation"),setTimeout((function(){$("#page-loader").css("display","none")}),1750))}))}});
-//# sourceMappingURL=homePageScripts.js.map
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "/";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "./src/js/01_homePageScripts.js":
+/*!**************************************!*\
+  !*** ./src/js/01_homePageScripts.js ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// Preloader
+$(function () {
+  $('#preload-homepage').click(function () {
+    $(this).fadeOut('3000').remove();
+  });
+
+  if (!sessionStorage.getItem('homePagePreloader')) {
+    sessionStorage.setItem('homePagePreloader', true);
+    $('#preload-homepage').css('opacity', '1');
+    $('#preload-homepage').addClass('is-desktop');
+    setTimeout(function () {
+      var c = document.getElementById('loader-txt-wrap').children;
+      c[1].innerHTML = '6';
+      c[1].classList.add('fade-up');
+      setTimeout(function () {
+        c[4].innerHTML = '8';
+        c[4].classList.add('fade-up');
+        setTimeout(function () {
+          c[7].innerHTML = '5';
+          c[7].classList.add('fade-up');
+          setTimeout(function () {
+            c[2].innerHTML = '7';
+            c[2].classList.add('fade-up');
+            setTimeout(function () {
+              c[5].innerHTML = '1';
+              c[5].classList.add('fade-up');
+            }, 500);
+          }, 500);
+        }, 500);
+      }, 500);
+    }, 2000);
+    setTimeout(function () {
+      $('#preload-homepage').removeClass('is-desktop');
+      $('#preload-homepage').addClass('preload-end');
+      setTimeout(function () {
+        $('#preload-homepage').css('display', 'none');
+      }, 1000);
+    }, 4000);
+  } else {
+    $('#preload-homepage').css('display', 'none');
+    $("body").removeClass("animation");
+  }
+});
+$(function () {
+  if (!sessionStorage.getItem("pageLoader")) {
+    // sessionStorage.setItem('homePagePreloader', true);
+    $("#preload-homepage").addClass("loading");
+    $("body").removeClass("animation");
+    setTimeout(function () {
+      $("#page-loader").css("display", "none");
+    }, 1750);
+  } else {
+    $("#preload-homepage").addClass("loading");
+  }
+});
+
+/***/ }),
+
+/***/ "./src/scss/index.scss":
+/*!*****************************!*\
+  !*** ./src/scss/index.scss ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ 0:
+/*!******************************************************************!*\
+  !*** multi ./src/js/01_homePageScripts.js ./src/scss/index.scss ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! /Users/shady/Desktop/ModernAmusment/src/js/01_homePageScripts.js */"./src/js/01_homePageScripts.js");
+module.exports = __webpack_require__(/*! /Users/shady/Desktop/ModernAmusment/src/scss/index.scss */"./src/scss/index.scss");
+
+
+/***/ })
+
+/******/ });

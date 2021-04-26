@@ -16,13 +16,13 @@
             <button class="button category-button" data-slug="all">All</button>
           </li>
           <li class="category-li">
-            <button class="button category-button" data-slug="Dynamic Website">
-            Dynamic Website
+            <button class="button category-button" data-slug="Dynamic">
+            Dynamic
             </button>
           </li>
           <li class="category-li">
-            <button class="button category-button" data-slug="Static Website">
-            Static Website
+            <button class="button category-button" data-slug="Static">
+            Static
            </button>
           </li>
           <li class="category-li">
@@ -36,13 +36,13 @@
             </button>
           </li>
           <li class="category-li">
-            <button class="button category-button" data-slug="MySQL">
-            MySQL
+            <button class="button category-button" data-slug="Laravel/PHP">
+            Laravel/PHP
             </button>
           </li>
           <li class="category-li">
-            <button class="button category-button" data-slug="PHP">
-            PHP
+            <button class="button category-button" data-slug="MySQL">
+            MySQL
             </button>
           </li>
           <li class="category-li">
@@ -56,18 +56,13 @@
             </button>
           </li>
           <li class="category-li">
-            <button class="button category-button" data-slug="Dedicated CSS">
-            Dedicated CSS
+            <button class="button category-button" data-slug="Dedicated-SCSS">
+            Dedicated-SCSS
             </button>
           </li>
           <li class="category-li">
-            <button class="button category-button" data-slug="Content Management System">
-            Content Management System
-            </button>
-          </li>
-          <li class="category-li">
-            <button class="button category-button" data-slug="CMS E-Commerce">
-            CMS E-Commerce
+            <button class="button category-button" data-slug="CMS-E-Commerce">
+            CMS-E-Commerce
             </button>
           </li>
           <li class="category-li">
@@ -81,8 +76,8 @@
             </button>
           </li>
           <li class="category-li">
-            <button class="button category-button" data-slug="Creative Direction">
-            Creative Direction
+            <button class="button category-button" data-slug="Creative-Direction">
+            Creative-Direction
             </button>
           </li>
         </ul>
