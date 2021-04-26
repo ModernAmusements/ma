@@ -66,15 +66,24 @@ columns:
         label: Tags
         type: multiselect
         min: 1
-        max: 2
+        max: 4
         width: 1/2
         options:
-          Development: Development
-          CMS: CMS
-          PHP/Laravel: PHP/Laravel
-          VueJs: VueJs
+          Dynamic Website: Dynamic Website
+          Static Website: Static Website
+          E-Commerce : E-Commerce
+          PHP: PHP
+          Laravel: Laravel
+          Bootstrap: Bootstrap
           MySQL: MySQL
-          SPA: SPA
+          VueJs: VueJs
+          Portfolio: Portfolio
+          Dedicated CSS: Dedicated CSS
+          Content Management System: Content Management System
+          CMS E-Commerce: CMS E-Commerce
+          Flat-File-CMS: Flat-File-CMS
+          UI-Design: UI-Design
+          Creative Direction: Creative Direction
       description:
         type: textarea
         size: medium

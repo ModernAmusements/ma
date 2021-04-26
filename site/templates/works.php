@@ -16,16 +16,18 @@
             <button class="button category-button" data-slug="all">All</button>
           </li>
           <li class="category-li">
-            <button class="button category-button" data-slug="Development">
-            Development
+            <button class="button category-button" data-slug="Dynamic Website">
+            Dynamic Website
             </button>
           </li>
           <li class="category-li">
-            <button class="button category-button" data-slug="CMS">CMS</button>
+            <button class="button category-button" data-slug="Static Website">
+            Static Website
+           </button>
           </li>
           <li class="category-li">
-            <button class="button category-button" data-slug="PHP/Laravel">
-            PHP/Laravel
+            <button class="button category-button" data-slug="E-Commerce">
+            E-Commerce
             </button>
           </li>
           <li class="category-li">
@@ -39,36 +41,70 @@
             </button>
           </li>
           <li class="category-li">
-            <button class="button category-button" data-slug="SPA">
-            SPA
+            <button class="button category-button" data-slug="PHP">
+            PHP
+            </button>
+          </li>
+          <li class="category-li">
+            <button class="button category-button" data-slug="Bootstrap">
+            Bootstrap
+            </button>
+          </li>
+          <li class="category-li">
+            <button class="button category-button" data-slug="Portfolio">
+            Portfolio
+            </button>
+          </li>
+          <li class="category-li">
+            <button class="button category-button" data-slug="Dedicated CSS">
+            Dedicated CSS
+            </button>
+          </li>
+          <li class="category-li">
+            <button class="button category-button" data-slug="Content Management System">
+            Content Management System
+            </button>
+          </li>
+          <li class="category-li">
+            <button class="button category-button" data-slug="CMS E-Commerce">
+            CMS E-Commerce
+            </button>
+          </li>
+          <li class="category-li">
+            <button class="button category-button" data-slug="Flat-File-CMS">
+            Flat-File-CMS
+            </button>
+          </li>
+          <li class="category-li">
+            <button class="button category-button" data-slug="UI-Design">
+            UI-Design
+            </button>
+          </li>
+          <li class="category-li">
+            <button class="button category-button" data-slug="Creative Direction">
+            Creative Direction
             </button>
           </li>
         </ul>
       </nav>
-      <div class="category-legend">
-        <div class="category-legend-title">
-          <span>Title:</span>
-        </div>
-      <div class="category-legend-description">
-      <span>Year:</span>
-      <span>Type:</span>
-      <!-- <span>Client:</span> -->
-      </div>
-      </div>
       <?php foreach ($page->children()->listed()->sortBy('date', 'desc') as
       $work) : ?>
       <article class="post" data-categories="<?= $tags = implode(' ', $work->tags()->split(','));?> all">
         <header class="post-header">
           <h1 class="post-title"><?= $work->title() ?></h1>
           <div class="post-meta-information">
-            <tags>
-              <p class="paragraph"><?= $work->date()->toDate('Y') ?></p>
-            </tags>
+            <div class="post-date">
+              <tags>
+                  <p class="paragraph"><?= $work->date()->toDate('Y') ?></p>
+              </tags>
+            </div>
+            <div class="post-tags">
             <?php foreach ($work->tags()->split() as $tag): ?>
-            <tags>
-              <p class="paragraph"><?= $tag ?></p>
-            </tags>
-            <?php endforeach ?>
+              <tags class="post-meta">
+                <p class="small"><?= $tag ?></p>
+              </tags>
+              <?php endforeach ?>
+            </div>
           </div>
           <label class="post-header-toggle">
             <span class="post-chevron"></span>

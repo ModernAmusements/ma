@@ -1,13 +1,8 @@
 <?php
+
 ?>
 <?php snippet('header') ?>
 <main class="work-subpage">
-  <?php if ($cover = $page->cover()->resize(1080)): ?>
-  <section class="cover">
-    <img class="lazy" data-src="<?= $cover->url() ?>" alt="<?= $cover->alt() ?>" />
-    <time><?= $page->date()->toDate('d F Y') ?></time>
-  </section>
-  <?php endif ?>
   <section class="work-subpage-content">
     <article class="subpage-information">
       <div class="subpage-meta">
@@ -44,13 +39,13 @@
                   <?php if ($image = $page->image()->resize(1080)): ?>
                   <?php foreach ($page->images()->template('work-image') as
                   $image): ?>
-                  <img data-lazy="<?= $image->url() ?>" alt="<?= $cover->alt() ?>" />
+                  <img data-lazy="<?= $image->url() ?>" alt="<?= $image->alt() ?>" />
                   <?php endforeach ?>
                   <?php endif ?>
                 </div>
                 <div class="text-counter"></div>
                 <p class="vid-sub-heading">
-                <?= $cover->alt() ?> </p>
+                <?= $image->alt() ?> </p>
               </article>
               <article class="work-videos">
                 <?php foreach ($page->videos()->template('work-videos') as
