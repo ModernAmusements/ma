@@ -248,22 +248,22 @@
   transition: height 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
   .post-title {
     display: grid;
-    grid-column: 1 / 5;
+    grid-column: 1 / 4;
     margin: 0;
-    font-size: var(--h1-size);
+    font-size: 30px;
     transition: font-size 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
   }
   .post-meta-information {
-    grid-column: 5 / 8;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 10px;
+    grid-column: 4 / 8;
+    display: flex;
+    justify-content: space-around;
     .post-tags {
       display: flex;
       flex-direction: row;
       tags {
         margin-left: 5px;
         padding: 0 30px;
+        white-space: nowrap;
       }
     }
     .post-date {

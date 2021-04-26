@@ -93,17 +93,17 @@
         <header class="post-header">
           <h1 class="post-title"><?= $work->title() ?></h1>
           <div class="post-meta-information">
+            <div class="post-tags">
+              <?php foreach ($work->tags()->split() as $tag): ?>
+                <tags class="post-meta">
+                  <p class="small"><?= $tag ?></p>
+                </tags>
+              <?php endforeach ?>
+            </div>
             <div class="post-date">
               <tags>
                   <p class="paragraph"><?= $work->date()->toDate('Y') ?></p>
               </tags>
-            </div>
-            <div class="post-tags">
-            <?php foreach ($work->tags()->split() as $tag): ?>
-              <tags class="post-meta">
-                <p class="small"><?= $tag ?></p>
-              </tags>
-              <?php endforeach ?>
             </div>
           </div>
           <label class="post-header-toggle">

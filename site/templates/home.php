@@ -243,7 +243,6 @@
           <div class="loader-txt">A</div>
           <div class="loader-txt">D</div>
           <div class="loader-txt">Y</div>
-          <div class="loader-txt"></div>
           <div class="loader-txt">T</div>
           <div class="loader-txt">A</div>
           <div class="loader-txt">W</div>
