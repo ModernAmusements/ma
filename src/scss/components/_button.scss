@@ -107,3 +107,80 @@
     transform: translateY(0);
   }
 }
+
+
+$time: 320ms;
+$ease: ease;
+
+@mixin animation($animate...) {
+	$max: length($animate);
+	$animations: '';
+
+	@for $i from 1 through $max {
+		$animations: #{$animations + nth($animate, $i)};
+
+		@if $i < $max {
+			$animations: #{$animations + ', '};
+		}
+	}
+
+	animation: $animations;
+}
+
+@mixin keyframes($animationName) {
+	@-webkit-keyframes #{$animationName} {
+		@content;
+	}
+
+	@-moz-keyframes #{$animationName} {
+		@content;
+	}
+
+	@-o-keyframes #{$animationName} {
+		@content;
+	}
+
+	@keyframes #{$animationName} {
+		@content;
+	}
+}
+
+@include keyframes(fadeIn) {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+
+@include keyframes(fadeOut) {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@mixin transition($val...) {
+	transition: $val;
+}
+
+@mixin transform($val...) {
+	transform: $val;
+}
+
+
+button {
+  @include transition(all $time $ease);
+
+
+  &:hover {
+    transform: scale(1.05);
+
+  }
+}

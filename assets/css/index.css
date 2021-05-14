@@ -2753,6 +2753,54 @@ main.work-subpage .work-subpage-content .subpage-information .text-counter {
   transform: translateY(0);
 }
 
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+button {
+  transition: all 320ms ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
 .post-meta-capabilities,
 .post-meta-row {
   display: flex;
