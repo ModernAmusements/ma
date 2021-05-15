@@ -1,5 +1,8 @@
 {
-    "/js/homePageScripts.js": "/js/homePageScripts.js",
-    "/css/index.css": "/css/index.css",
-    "/js/main.js": "/js/main.js"
+    "/js/homePageScripts.js": "/js/homePageScripts.js?id=764aaa6ae1e75e8b52eb",
+    "/css/index.css": "/css/index.css?id=209c3e032fe24afac5de",
+    "/js/homePageScripts.js.map": "/js/homePageScripts.js.map?id=7cebd54406f89075cfdd",
+    "/css/index.css.map": "/css/index.css.map?id=d87f009a51d520117052",
+    "/js/main.js": "/js/main.js?id=6168bde8c84497910a70",
+    "/js/main.js.map": "/js/main.js.map?id=fa408e1c4101812985d2"
 }

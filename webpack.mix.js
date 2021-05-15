@@ -22,6 +22,7 @@ mix.js([
     'src/js/07_modal.js',
     'src/js/09_plugins.js',
     'src/js/10_current-device.min.js',
+    'src/js/employedModal.js',
     'src/js/11_cookieConsent.js',
     ], 'assets/js/main.js');
 
