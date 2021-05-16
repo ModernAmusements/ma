@@ -247,7 +247,7 @@ header('Permissions-Policy: geolocation=(self "https://shady-tawfik.de/"), micro
         </svg>
                 </div>
 
-                <h1>Hello! I’m Shady. I work with startups and top companies!</h1>
+                <h1>Hello! I’m Shady.<br/>I work with startups and top companies!</h1>
                 <p class="subheading">Shady is currently <strong>employed</strong> and <span class="underline">can not</span> do any independent work, or otherwise contractually oblige.<br/>Nevertheless, you are welcome to look around on my site. If you still want to contact me, just get in touch!</p>
                 <div class="buttons-employed">
                     <a href="#fffModal" category="header-navigation" action="home" label="consultation-modal" rel="modal:open">

@@ -1,13 +1,11 @@
 // close btn
 .button-close-employed {
-    position: absolute;
+    position: relative;
     width: 24px;
     height: 24px;
     border-radius: var(--b-r-small);
     background: var(--foreground-color);
     z-index: 2;
-    top: 16px;
-    right: 16px;
     transition: background 0.3s ease;
     cursor: pointer;
 }
@@ -59,13 +57,6 @@
   backdrop-filter: saturate(180%) blur(5px);
 }
 
-
-@media (max-width: 767px) {
-  .modal-overlay-employed {
-    padding: 20px;
-  }
-}
-
 .is-visible {
   display: flex;
 }
@@ -100,3 +91,47 @@
     justify-content: space-between;
   }
 }
+
+
+@media (max-width: 767px) {
+  .modal-overlay-employed {
+    padding: 20px;
+  }
+  .modal-employed{
+    h1,
+    p {
+      text-align: center;
+    }
+    h1 {
+      font-size: 30px;
+    }
+    p.subheading {
+      font-size: 14px;
+      margin-bottom: calc(var(--lineHeight) * 1);
+    }
+  }
+}
+
+
+
+
+@media (max-width: 321px) {
+  .modal-overlay-employed {
+    padding: 20px;
+  }
+  .modal-employed{
+    h1,
+    p {
+      text-align: center;
+    }
+    h1 {
+      font-size: 24px;
+      line-height: 24px;
+    }
+    p.subheading {
+      font-size: 12px;
+      margin-bottom: calc(var(--lineHeight) * 0.5);
+    }
+  }
+}
+
